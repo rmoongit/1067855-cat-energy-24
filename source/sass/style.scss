@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+// global
+
+@import "global/fonts.scss";
+@import "global/page.scss";
+@import "global/container.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
+// blocks
+
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/main.scss";
+@import "blocks/nutrition.scss";
+@import "blocks/button.scss";
+@import "blocks/diets-catalog.scss";
+@import "blocks/functional.scss";
+@import "blocks/before-after.scss";
+@import "blocks/compare.scss";
+@import "blocks/scale.scss";
+@import "blocks/address.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+
+//catalog
