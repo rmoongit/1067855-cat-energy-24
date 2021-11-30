@@ -1,0 +1,22 @@
+.nutrition {
+  position: relative;
+  outline: 2px solid $black;
+  outline-offset: 1px;
+  background-image: url("../img/cat-background.jpg");
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+  z-index: -2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 302px;
+    background-color: $green;
+    z-index: -1;
+    opacity: 0.85;
+  }
+}
+

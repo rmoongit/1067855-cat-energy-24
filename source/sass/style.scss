@@ -5,6 +5,7 @@
 @import "global/container.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
+@import "global/visually-hidden.scss";
 
 // blocks
 
@@ -22,4 +23,17 @@
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
 
-//catalog
+// catalog
+
+@import "blocks/catalog.scss";
+@import "blocks/contains.scss";
+@import "blocks/show-more.scss";
+@import "blocks/extra-goods.scss";
+@import "blocks/bonus.scss";
+
+// form
+
+@import "blocks/form.scss";
+@import "blocks/select-programm.scss";
+@import "blocks/choice.scss";
+@import "blocks/text-field.scss";

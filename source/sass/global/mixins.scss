@@ -1,0 +1,38 @@
+//CONTAINER
+@mixin container() {
+  margin: 0 auto;
+  padding: 0 30px 0;
+  max-width: 320px;
+}
+
+@mixin tablet() {
+  padding: 0 110px 0;
+  max-width: 768px;
+}
+
+@mixin desktop() {
+  max-width: 1440px;
+}
+
+//lists
+
+@mixin clear-fieldset() {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin clear-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//title
+
+@mixin tablet-title() {
+  font-weight: 400;
+  color: $black;
+  line-height: 60px;
+  font-size: 60px;
+}
