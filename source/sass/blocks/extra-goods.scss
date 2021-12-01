@@ -1,3 +1,38 @@
+.extra-goods {
+  margin-bottom: 35px;
+}
+
 .extra-goods__bonus {
   position: relative;
+}
+
+.extra-goods__title {
+  margin: 0 0 36px;
+  color: $black;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.extra-goods__list {
+  @include clear-list;
+}
+
+.extra-goods__item {
+  padding-bottom: 19px;
+}
+
+.extra-goods__text {
+  text-transform: uppercase;
+  color: $black;
+  line-height: 16px;
+  margin: 0 0 13px;
+}
+
+.extra-goods__description {
+  margin: 0 0 15px;
+  font-family: $arial;
+  color: $grey;
+  font-size: 14px;
+  line-height: 14px;
 }

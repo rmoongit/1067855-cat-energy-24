@@ -1,0 +1,31 @@
+.address {
+  outline: 2px solid $green;
+  outline-offset: -3px;
+
+  &--background {
+    background-color: $basic-grey;
+  }
+}
+
+.address__wrapper {
+  display: flex;
+  padding: 26px 20px;
+}
+
+.address__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  color: $black;
+  text-align: start;
+
+  &--font {
+    font-family: $arial;
+    font-size: 14px;
+    color: $grey;
+  }
+
+  &--bold {
+    text-transform: uppercase;
+  }
+}

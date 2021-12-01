@@ -1,0 +1,24 @@
+.show-more {
+  outline-offset: -3px;
+  outline: 2px solid $green;
+  margin-bottom: 25px;
+}
+
+.show-more__wrapper {
+  padding: 0 20px 25px;
+}
+
+.show-more__title {
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.show-more__text {
+  margin: 0 0 20px;
+  font-family: $arial;
+  color: $grey;
+  font-size: 12px;
+}

@@ -1,0 +1,12 @@
+.choice {
+  display: flex;
+  flex-direction: row;
+  outline: 2px solid $green;
+  outline-offset: -3px;
+}
+
+span {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $black;
+}

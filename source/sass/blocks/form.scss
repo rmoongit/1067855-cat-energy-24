@@ -1,0 +1,69 @@
+.form {
+  margin: 0;
+}
+
+.form__centered {
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0 20px 0;
+}
+
+.form__parameters-list {
+  padding-bottom: 27px;
+}
+
+.form__parameters-item {
+  input {
+    margin-bottom: 13px;
+    color: $grey;
+    text-transform: uppercase;
+    padding: 13px 15px;
+    font-family: $main-font;
+  }
+}
+
+.form__title {
+  font-size: 16px;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.form__comments-title {
+  margin-bottom: 37px;
+  display: inline-block;
+  color: $black;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__contact-title {
+  margin: 0 0 37px;
+}
+
+.form__comments {
+  margin-bottom: 27px;
+
+  textarea {
+    font-family: $main-font;
+    font-weight: 400;
+    color: $grey;
+    text-transform: uppercase;
+    padding: 9px 15px;
+    height: 150px;
+    resize: none;
+  }
+}
+
+.form__extra-title {
+  margin: 0 0 34px;
+}
+
+.form__extra-text {
+  padding: 21px 0 32px;
+  margin: 0;
+  color: $black;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $arial;
+}

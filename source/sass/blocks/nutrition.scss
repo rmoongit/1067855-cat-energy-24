@@ -1,18 +1,19 @@
 .nutrition {
+  margin-bottom: 20px;
   position: relative;
   outline: 2px solid $black;
   outline-offset: 1px;
   background-image: url("../img/cat-background.jpg");
-  background-size: 320px 302px;
+  background-size: 100% 302px;
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: 1;
 
   &::after {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 302px;
     background-color: $green;
     z-index: -1;
@@ -20,3 +21,23 @@
   }
 }
 
+.nutrition__wrapper {
+  padding-top: 27px;
+}
+
+.nutrition__title {
+  font-size: 34px;
+  line-height: 36px;
+  color: $white;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+.nutrition__text {
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-align: center;
+  margin: 0;
+}

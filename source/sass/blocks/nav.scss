@@ -1,0 +1,16 @@
+.nav {
+  outline: 2px solid $green;
+  outline-offset: -2px;
+}
+
+.nav__list {
+  @include clear-list;
+}
+
+.nav__list-link {
+  text-decoration: none;
+  color: $black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
