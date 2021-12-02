@@ -1,0 +1,20 @@
+.catalog {
+  outline: 2px solid $green;
+  outline-offset: -3px;
+}
+
+.catalog__product-wrapper {
+  padding: 11px 20px 14px;
+}
+
+.catalog__title {
+  color: $black;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.catalog__list {
+  @include clear-list;
+}

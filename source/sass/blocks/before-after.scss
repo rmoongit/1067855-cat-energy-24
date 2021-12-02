@@ -1,0 +1,54 @@
+.before-after {
+  outline: 2px solid $green;
+  outline-offset: -3px;
+  background-color: $bg-grey-light;
+}
+
+.before-after__title {
+  margin: 0 0 40px;
+  color: $black;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.before-after__text {
+  font-family: $arial;
+  margin: 0;
+  color: $grey;
+  margin-bottom: 38px;
+}
+
+.before-after__list {
+  @include clear-list;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.before-after__item {
+  span {
+    display: block;
+    margin-bottom: 7px;
+    color: $black;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    color: $grey;
+    font-family: $arial;
+    text-align: center;
+  }
+}
+
+.before-after__cost {
+  margin: 0 0 40px;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+}
+

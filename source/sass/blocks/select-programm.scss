@@ -1,0 +1,19 @@
+.select-programm {
+  padding: 27px 0 39px;
+  outline: 2px solid $green;
+  outline-offset: -3px;
+}
+
+.select-programm__title {
+  margin: 0 auto 37px;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+  font-weight: 400;
+}
+
+.select-programm__text {
+  margin: 0;
+  line-height: 18px;
+  text-transform: uppercase;
+}

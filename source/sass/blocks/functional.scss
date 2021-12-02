@@ -1,0 +1,35 @@
+.functional {
+  margin-bottom: 49px;
+  outline: 2px solid $green;
+  outline-offset: -3px;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+.functional__title {
+  margin: 0 0 40px;
+  color: $black;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.functional__list {
+  @include clear-list;
+  font-family: $arial;
+}
+
+.functional__item {
+  display: flex;
+}
+
+.functional__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.functional__text {
+  margin: 0;
+  color: $grey;
+}
