@@ -21,10 +21,10 @@
       </div>
 
       <nav class="header__nav nav">
-        <button class="nav__toggle nav__toggle--opened nav__toggle--closed nav__toggle--nojs" type="button">
+        <button class="nav__burger burger burger--opened burger--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="nav__wrapper container">
+        <div class="nav__wrapper">
 
           <ul class="nav__list">
             <li class="nav__list-item">
@@ -58,97 +58,97 @@
   </section>
 
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="container">
+      <section class="form__parameters">
+        <h2 class="visually-hidden">Параметры</h2>
+        <div class="form__parameters-wrapper">
+          <div class="form__parameters-list">
 
-    <section class="form__parameters">
-      <h2 class="visually-hidden">Параметры</h2>
-      <div class="form__parameters-wrapper form__centered">
-        <div class="form__parameters-list">
+            <label class="form__parameters-item field-text" for="name">
+              <span class="field-text__name">Имя:*</span>
+              <input class="field-text__input" type="text" id="name" name="name" placeholder="барсик">
+            </label>
 
-          <label class="form__parameters-item" for="name">
-            <span class="form__title">Имя:*</span>
-            <input type="text" id="name" name="name" placeholder="барсик">
+            <label class="form__parameters-item field-text" for="weight">
+              <span class="field-text__name">Вес (кг):*</span>
+              <input class="field-text__input" type="number" id="weight" name="weight" placeholder="7">
+            </label>
+
+            <label class="form__parameters-item field-text" for="age">
+              <span class="field-text__name">Возраст (лет):</span>
+              <input class="field-text__input" type="number" id="age" name="age" placeholder="7">
+            </label>
+          </div>
+
+          <div class="form__types">
+            <div class="form__types-wrapper">
+              <label class="form__types-item choice choice--radio">
+                <input class="choice__input" type="radio" name="parameters" value="diet" checked>
+                <span class="choice__name">похудение</span>
+              </label>
+
+              <label class="form__types-item choice choice--radio">
+                <input class="choice__input" type="radio" name="parameters" value="weight-increase">
+                <span class="choice__name">Набор массы</span>
+              </label>
+
+              <label class="form__types-item choice choice--radio">
+                <input class="choice__input" type="radio" name="parameters" value="advice">
+                <span class="choice__name">Не знаю (Нужен ваш совет)</span>
+              </label>
+
+            </div>
+          </div>
+      </section>
+
+      <div class="form__contact">
+        <div class="form__contact-wrapper">
+          <h2 class="form__contact-title title">Контактные данные
+            (владельца кота)</h2>
+          <label class="field-text field-text--email">
+            <span class="field-text__name">E-mail:*</span>
+            <input class="field-text__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
 
-          <label class="form__parameters-item" for="weight">
-            <span class="form__title">Вес (кг):*</span>
-            <input type="number" id="weight" name="weight" placeholder="7">
-          </label>
-
-          <label class="form__parameters-item" for="age">
-            <span class="form__title">Возраст (лет):</span>
-            <input type="number" id="age" name="age" placeholder="7">
+          <label class="field-text field-text--phone">
+            <span class="field-text__name">Телефон:*</span>
+            <input class="field-text__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
+      </div>
 
-        <div class="form__types form__centered">
-          <label class="form__types-item choice">
-            <input type="radio" name="parameters" value="diet" checked>
-            <span>похудение</span>
+      <label class="form__comments field-text">
+        <span class="form__comments-title title">Комментарий</span>
+        <textarea class="field-text__input" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </label>
+
+      <div class="form__extra">
+        <h2 class="form__extra-title title">Дополнительно</h2>
+        <div class="form__extra-wrapper">
+
+          <label class="form__extra-choice choice">
+            <input class="choice__item" type="checkbox" name="sweetener" value="sweetener" checked>
+            <span class="choice__name">сахарозаменитель</span>
           </label>
 
-          <label class="form__types-item choice">
-            <input type="radio" name="parameters" value="weight-increase">
-            <span>Набор массы</span>
+          <label class="form__extra-choice choice">
+            <input class="choice__item" type="checkbox" name="water" value="water">
+            <span class="choice__name">питьевая вода</span>
           </label>
 
-          <label class="form__types-item choice">
-            <input type="radio" name="parameters" value="advice">
-            <span>Не знаю (Нужен ваш совет)</span>
+          <label class="form__extra-choice choice">
+            <input class="choice__item" type="checkbox" name="milk" value="milk">
+            <span class="choice__name">молоко</span>
           </label>
 
+          <label class="form__extra-choice choice">
+            <input class="choice__item" type="checkbox" name="vitamins" value="vitamins">
+            <span class="choice__name">витамины</span>
+          </label>
+
+          <button class="form__extra-button button" type="submit">отправить заявку</button>
+          <p class="form__extra-text">* — Обязательные поля</p>
         </div>
-      </div>
-    </section>
-
-    <div class="form__contact">
-      <div class="form__centered">
-
-        <h2 class="form__contact-title text-field">Контактные данные
-          (владельца кота)</h2>
-        <label class="form__contact-item form__parameters-item form__contact-item--email">
-          <span class="form__title">E-mail:*</span>
-          <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </label>
-
-        <label class="form__contact-item form__parameters-item form__contact-item--phone">
-          <span class="form__title">Телефон:*</span>
-          <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-        </label>
-      </div>
-    </div>
-
-    <label class="form__comments form__centered text-field">
-      <span class="form__comments-title text-field">Комментарий</span>
-      <textarea name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
-    </label>
-
-    <div class="form__extra container">
-      <h2 class="form__extra-title text-field">Дополнительно</h2>
-      <div class="form__extra-centered form__centered">
-
-        <label class="form__extra-choice choice">
-          <input type="checkbox" name="sweetener" value="sweetener" checked>
-          <span>сахарозаменитель</span>
-        </label>
-
-        <label class="form__extra-choice choice">
-          <input type="checkbox" name="water" value="water">
-          <span>питьевая вода</span>
-        </label>
-
-        <label class="form__extra-choice choice">
-          <input type="checkbox" name="milk" value="milk">
-          <span>молоко</span>
-        </label>
-
-        <label class="form__extra-choice choice">
-          <input type="checkbox" name="vitamins" value="vitamins">
-          <span>витамины</span>
-        </label>
-
-        <button class="form__extra-button button" type="submit">отправить заявку</button>
-        <p class="form__extra-text">* — Обязательные поля</p>
-
       </div>
     </div>
   </form>
