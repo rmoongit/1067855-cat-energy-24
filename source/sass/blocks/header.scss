@@ -4,5 +4,31 @@
 }
 
 .header__wrapper {
-  padding: 10px 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20 17px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop;
+  }
+}
+
+.header__logo-image {
+  @media (min-width: $tablet-width) {
+    img {
+      width: 174px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    img {
+      width: 202px;
+    }
+  }
 }

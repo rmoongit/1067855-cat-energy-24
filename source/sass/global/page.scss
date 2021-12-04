@@ -1,4 +1,4 @@
-body {
+.page__body {
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -6,9 +6,26 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-family: $main-font;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 696px;
+      background-color: $green-cat;
+      background-image: url("../img/cat-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+  }
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }

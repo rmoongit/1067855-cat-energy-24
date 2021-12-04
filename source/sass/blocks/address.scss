@@ -1,6 +1,7 @@
 .address {
   outline: 2px solid $green;
   outline-offset: -3px;
+  position: relative;
 
   &--background {
     background-color: $basic-grey;
@@ -9,7 +10,21 @@
 
 .address__wrapper {
   display: flex;
-  padding: 26px 20px;
+  justify-content: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 565px;
+    background-color: $white;
+    left: 110px;
+    top: 98px;
+  }
 }
 
 .address__text {
