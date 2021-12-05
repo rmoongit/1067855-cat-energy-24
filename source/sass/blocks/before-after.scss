@@ -56,8 +56,6 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-fonts;
-    grid-column: 1;
-    grid-row: 2;
   }
 }
 
@@ -65,14 +63,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    grid-column: 1;
-    grid-row: 3;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 3;
-    display: grid;
-    grid-template-columns: 2fr;
+    flex-wrap: wrap;
+    column-gap: 48px;
   }
 }
 
@@ -113,23 +108,20 @@
   line-height: 20px;
   text-align: center;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
-    text-align: end;
-
-    br {
-      display: block;
-    }
+    width: 174px;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
     text-align: start;
+    width: 100%;
+    justify-content: flex-start;
 
-    br {
-      display: none;
+    span {
+      margin-left: 63px;
     }
   }
 }

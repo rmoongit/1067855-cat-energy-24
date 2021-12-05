@@ -29,6 +29,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  z-index: 10;
 
   @media (min-width: $desktop-width) {
     color: $white;

@@ -28,7 +28,20 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -35px;
     margin-bottom: 82px;
+    background-image: url("../img/cat-background-desktop.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      width: 50%;
+      right: 0;
+      left: inherit;
+      height: 638px;
+      background-color: $green-cat;
+    }
   }
 }
 
