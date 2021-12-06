@@ -1,14 +1,4 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-body {
+.page__body {
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -19,6 +9,13 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }

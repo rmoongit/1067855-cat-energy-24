@@ -5,6 +5,7 @@ $grey: #444444;
 
 //backgrounds
 $green: #68b738;
+$green-cat: #62a53b;
 $basic-grey: #f2f2f2;
 $special-grey: #ebebeb;
 $icon-color: #666666;
@@ -26,5 +27,11 @@ $border-error: #ff8282;
 $border-grey: #e7e7e7;
 
 //fonts
-$main-font: "Oswald";
-$arial: "Arial";
+$main-font: "Oswald", sans-serif;
+$arial: "Arial", sans-serif;
+
+
+//size
+
+$tablet-width: 768px;
+$desktop-width: 1440px;

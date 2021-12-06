@@ -14,22 +14,67 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-title;
+  }
 }
 
 .functional__list {
   @include clear-list;
   font-family: $arial;
+  counter-reset: itemNum;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .functional__item {
   display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 250px;
+    height: 280px;
+    z-index: 1;
+
+    &::after {
+      counter-increment: itemNum;
+      content: counter(itemNum);
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      left: 120px;
+      font-family: $main-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    text-align: start;
+  }
 }
 
 .functional__item:not(:last-child) {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .functional__text {
   margin: 0;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-fonts;
+  }
 }

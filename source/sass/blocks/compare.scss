@@ -1,3 +1,29 @@
 .compare {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-grey-light;
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 1/4;
+    background-color: transparent;
+  }
+}
+
+.compare__image {
+  img {
+    @media (min-width: $tablet-width) {
+      width: 591px;
+      height: 576px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 592px;
+      height: 511px;
+    }
+  }
 }

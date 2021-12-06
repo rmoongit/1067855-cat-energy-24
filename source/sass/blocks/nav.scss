@@ -1,16 +1,57 @@
 .nav {
-  outline: 2px solid $green;
-  outline-offset: -2px;
+  @media (min-width: $tablet-width) {
+    display: block;
+    max-width: 440px;
+  }
+}
+
+.nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .nav__list {
   @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav__list-link {
+  position: relative;
   text-decoration: none;
   color: $black;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  z-index: 10;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -5px;
+        background-color: $green-line;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
 }

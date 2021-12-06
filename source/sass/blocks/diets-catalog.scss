@@ -4,13 +4,22 @@
   outline-offset: -3px;
 }
 
+.diets-catalog__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    justify-content: space-between;
+  }
+}
+
 .diets-catalog__diet {
   margin-bottom: 20px;
   background-color: $bg-grey;
-}
 
-.diets-catalog__weight {
-  background-color: $bg-grey;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    height: 374px;
+  }
 }
 
 .diets-catalog__title {
@@ -18,12 +27,21 @@
   line-height: 37px;
   margin: 0;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .diets-catalog__text {
   font-family: $arial;
   color: $grey;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-fonts;
+  }
 }
 
 .diets-catalog__arrow {
@@ -46,6 +64,11 @@
       transform: translate(-50%, -50%);
       width: 24px;
       height: 10px;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }

@@ -11,7 +11,7 @@
 
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
-@import "blocks/main.scss";
+@import "blocks/burger.scss";
 @import "blocks/nutrition.scss";
 @import "blocks/button.scss";
 @import "blocks/diets-catalog.scss";
@@ -34,6 +34,7 @@
 // form
 
 @import "blocks/form.scss";
+@import "blocks/title.scss";
 @import "blocks/select-programm.scss";
 @import "blocks/choice.scss";
-@import "blocks/text-field.scss";
+@import "blocks/field-text.scss";

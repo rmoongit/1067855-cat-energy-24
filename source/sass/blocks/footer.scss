@@ -5,4 +5,27 @@
 
 .footer__wrapper {
   padding: 39px 20px 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__list {
+  @include clear-list;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__image {
+  margin: 0 auto;
+}
+
+.footer__developers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

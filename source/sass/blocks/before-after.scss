@@ -2,6 +2,37 @@
   outline: 2px solid $green;
   outline-offset: -3px;
   background-color: $bg-grey-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 462px;
+      background-color: $basic-grey;
+    }
+  }
+}
+
+.before-after__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 436px 1fr;
+  }
 }
 
 .before-after__title {
@@ -10,6 +41,11 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-title;
+    grid-column: 1;
+  }
 }
 
 .before-after__text {
@@ -17,6 +53,22 @@
   margin: 0;
   color: $grey;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-fonts;
+  }
+}
+
+.before-after__days {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    column-gap: 48px;
+  }
 }
 
 .before-after__list {
@@ -24,6 +76,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    column-gap: 42px;
+  }
 }
 
 .before-after__item {
@@ -50,5 +107,21 @@
   text-transform: uppercase;
   line-height: 20px;
   text-align: center;
-}
 
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    width: 100%;
+    justify-content: flex-start;
+
+    span {
+      margin-left: 63px;
+    }
+  }
+}
