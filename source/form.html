@@ -52,13 +52,14 @@
   <section class="select-programm">
     <div class="select-programm__wrapper container">
       <h1 class="select-programm__title">Подбор программы</h1>
-      <p class="select-programm__text">Заполните анкету, и мы подберем
+      <p class="select-programm__text">Заполните анкету, и мы подберем<br>
         программу питания для вашего кота</p>
     </div>
   </section>
 
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="container">
+    <div class="form__container container">
+
       <section class="form__parameters">
         <h2 class="visually-hidden">Параметры</h2>
         <div class="form__parameters-wrapper">
@@ -96,15 +97,16 @@
                 <input class="choice__input" type="radio" name="parameters" value="advice">
                 <span class="choice__name">Не знаю (Нужен ваш совет)</span>
               </label>
-
             </div>
+
           </div>
+        </div>
       </section>
 
       <div class="form__contact">
+        <h2 class="form__contact-title title">Контактные данные
+          (владельца кота)</h2>
         <div class="form__contact-wrapper">
-          <h2 class="form__contact-title title">Контактные данные
-            (владельца кота)</h2>
           <label class="field-text field-text--email">
             <span class="field-text__name">E-mail:*</span>
             <input class="field-text__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -117,9 +119,9 @@
         </div>
       </div>
 
-      <label class="form__comments field-text">
+      <label class="form__comments">
         <span class="form__comments-title title">Комментарий</span>
-        <textarea class="field-text__input" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </label>
 
       <div class="form__extra">
@@ -145,10 +147,11 @@
             <input class="choice__item" type="checkbox" name="vitamins" value="vitamins">
             <span class="choice__name">витамины</span>
           </label>
-
-          <button class="form__extra-button button" type="submit">отправить заявку</button>
-          <p class="form__extra-text">* — Обязательные поля</p>
         </div>
+
+        <button class="form__extra-button button" type="submit">отправить заявку</button>
+        <p class="form__extra-text">* — Обязательные поля</p>
+
       </div>
     </div>
   </form>
@@ -169,7 +172,9 @@
     <div class="footer__wrapper container">
 
       <div class="footer__logo">
-        <img class="footer__image" src="img/logo-energy.svg" width="128" height="24" alt="Логотип енерджи">
+        <a href="#">
+          <img class="footer__image" src="img/logo-energy.svg" width="128" height="24" alt="Логотип енерджи">
+        </a>
       </div>
 
       <div class="footer__icons">
