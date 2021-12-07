@@ -1,11 +1,16 @@
 .bonus {
   background-image: url("../img/bagpack.png");
-  background-size: 100% auto;
   background-repeat: no-repeat;
-  z-index: -2;
+  background-position: center;
   height: 289px;
   outline: 2px solid $black;
   outline-offset: 1px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bagpack-tablet.png");
+    object-fit: cover;
+    height: auto;
+  }
 
   &::after {
     position: absolute;
@@ -13,15 +18,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 289px;
-    background-color: $green;
+    height: 100%;
+    background-color: $green-cat;
     z-index: -1;
-    opacity: 0.85;
   }
 }
 
 .bonus__wrapper {
   padding-top: 58px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .bonus__img {
