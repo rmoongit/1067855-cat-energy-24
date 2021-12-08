@@ -12,6 +12,10 @@
     height: auto;
   }
 
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bagpack-desktop.png");
+  }
+
   &::after {
     position: absolute;
     content: "";
