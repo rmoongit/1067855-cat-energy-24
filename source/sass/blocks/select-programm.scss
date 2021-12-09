@@ -4,6 +4,12 @@
   outline-offset: -3px;
 }
 
+.select-programm__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+}
+
 .select-programm__title {
   margin: 0 auto 37px;
   font-size: 36px;

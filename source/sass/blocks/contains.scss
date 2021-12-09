@@ -17,6 +17,7 @@
   line-height: 16px;
   color: $grey;
   font-family: $arial;
+  justify-content: space-between;
 
   dd {
     @include clear-list;

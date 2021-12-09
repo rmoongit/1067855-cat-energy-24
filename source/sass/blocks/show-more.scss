@@ -5,7 +5,7 @@
 }
 
 .show-more__wrapper {
-  padding: 0 20px 25px;
+  grid-column: 1/-1;
 }
 
 .show-more__title {
@@ -21,4 +21,9 @@
   font-family: $arial;
   color: $grey;
   font-size: 12px;
+}
+
+.show-more__link {
+  background-color: $basic-grey;
+  color: $grey;
 }

@@ -1,21 +1,37 @@
 .field-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   margin-bottom: 13px;
   outline: none;
-  display: block;
 }
 
 .field-text__name {
+  flex-shrink: 0;
+  margin-right: 13px;
+  display: block;
   font-size: 16px;
   color: $grey;
   text-transform: uppercase;
 }
 
-.field-text__input {
+.field-text__input,
+textarea {
+  flex-grow: 1;
   border: 1px solid $border-hover;
   color: $grey;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
-  padding: 13px 15px;
+  padding: 13px 7px;
   font-family: $main-font;
   outline: none;
+  width: 100%;
+}
+
+.field-text__input {
+  @media (min-width: $desktop-width) {
+    width: 486px;
+  }
 }
