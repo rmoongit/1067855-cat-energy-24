@@ -1,4 +1,6 @@
 .nav {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: block;
     max-width: 440px;
@@ -6,7 +8,15 @@
 }
 
 .nav__wrapper {
-  display: none;
+  display: block;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -23,14 +33,27 @@
   }
 }
 
+.nav__list-item {
+  @include clear-list;
+}
+
 .nav__list-link {
   position: relative;
+  display: block;
   text-decoration: none;
   color: $black;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   z-index: 10;
+  border-top: 1px solid $border-grey;
+  padding: 23px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 5px 0;
+  }
 
   @media (min-width: $desktop-width) {
     &--color {
@@ -50,7 +73,9 @@
         background-color: $green-line;
       }
     }
+  }
 
+  &--index {
     @media (min-width: $desktop-width) {
       &::after {
         background-color: $white;

@@ -13,19 +13,16 @@
 
   <header class="header">
     <div class="header__wrapper container">
-
-      <div class="header__logo">
-        <a href="index.html" class="header__logo-image">
-          <img src="img/header-logo-cat.svg" width="191" height="38" alt="Логотип шапки Кэт">
-        </a>
-      </div>
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="img/header-logo-cat.svg" width="191" height="38" alt="Логотип шапки Кэт">
+      </a>
 
       <nav class="header__nav nav">
-        <button class="nav__burger burger burger--opened" type="button">
+        <button class="nav__burger burger  burger--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="nav__wrapper">
 
+        <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__list-item">
               <a class="nav__list-link" href="index.html">
@@ -33,7 +30,7 @@
               </a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link" href="catalog.html">
+              <a class="nav__list-link nav__list-link--active" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
@@ -366,5 +363,7 @@
     </div>
 
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
