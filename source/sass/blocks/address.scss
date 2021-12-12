@@ -1,6 +1,4 @@
 .address {
-  outline: 2px solid $green;
-  outline-offset: -3px;
   position: relative;
 
   &--background {
@@ -16,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 26px 70px;
+    padding: 56px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,9 +37,36 @@
     font-family: $arial;
     font-size: 14px;
     color: $grey;
+
+    br {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 292px;
+      text-align: end;
+      font-size: 16px;
+      line-height: 20px;
+
+      br {
+        display: block;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 106px;
+    }
   }
 
   &--bold {
     text-transform: uppercase;
+    width: 145px;
+    flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+      width: 164px;
+    }
   }
 }

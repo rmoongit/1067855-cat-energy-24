@@ -114,23 +114,27 @@
     font-size: 16px;
     line-height: 16px;
 
-    &:hover,
-    &:active {
+    &:hover {
       &::after {
         width: 33px;
         background-image: url("../img/icons/icon-right-arrow-long.svg");
       }
     }
 
+    &:active {
+      opacity: 0.3;
+    }
+
     &::after {
       position: absolute;
       content: "";
-      background-image: url("../img/icons/icon-right-arrow.svg");
+      background-image: url("../img/icons/icon-right-arrow-long.svg");
       background-repeat: no-repeat;
+      background-position: right;
       top: 50%;
-      left: 170px;
+      left: 150px;
       transform: translate(-50%, -50%);
-      width: 31px;
+      width: 24px;
       height: 10px;
     }
 

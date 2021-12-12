@@ -11,6 +11,14 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    color: $white-rgb;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;

@@ -1,6 +1,5 @@
 .before-after {
-  outline: 2px solid $green;
-  outline-offset: -3px;
+  padding: 25px 0 25px 0;
   background-color: $bg-grey-light;
 
   @media (min-width: $tablet-width) {
@@ -9,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding: 43px 0 25px 0;
     background-image: linear-gradient($white 0%, $white 29%, $basic-grey 29%, $basic-grey 100%);
 
     &::after {
@@ -47,6 +47,10 @@
     @include tablet-title;
     grid-column: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px;
+  }
 }
 
 .before-after__text {
@@ -57,6 +61,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-fonts;
+    padding-right: 32px;
   }
 }
 
@@ -64,6 +69,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +82,11 @@
   @include clear-list;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 42px;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: center;
@@ -85,20 +95,58 @@
 }
 
 .before-after__item {
-  span {
-    display: block;
-    margin-bottom: 7px;
-    color: $black;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
+  border: 1px solid $border-hover;
+  border-radius: 5px;
+  padding: 13px 0 18px;
+  position: relative;
+  text-align: center;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 15px 30px 18px;
+  }
+}
+
+.before-after__subtitle {
+  display: block;
+  margin-bottom: 7px;
+  color: $black;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.before-after__sub-text {
+  margin: 0;
+  color: $grey;
+  font-family: $arial;
+  text-align: center;
+  position: absolute;
+  background-color: $bg-grey-light;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 0 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 5px;
+    line-height: 14px;
+    background-color: $white;
+    text-align: center;
+    width: 86%;
+    bottom: -8px;
+
+    br {
+      display: none;
+    }
   }
 
-  p {
-    margin: 0;
-    color: $grey;
-    font-family: $arial;
-    text-align: center;
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
   }
 }
 
@@ -120,6 +168,7 @@
     text-align: start;
     width: 100%;
     justify-content: flex-start;
+    column-gap: 30px;
 
     span {
       margin-left: 63px;

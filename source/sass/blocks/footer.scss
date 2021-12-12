@@ -1,15 +1,16 @@
-.footer {
-  outline: 2px solid $green;
-  outline-offset: -3px;
-}
 
 .footer__wrapper {
   padding: 39px 20px 22px;
 
   @media (min-width: $tablet-width) {
+    padding: 61px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px;
   }
 }
 
@@ -18,14 +19,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 34px;
+  padding: 20px 0;
+  border-top: 1px solid $bg-grey;
+  border-bottom: 1px solid $bg-grey;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
 }
 
 .footer__image {
-  margin: 0 auto;
+  margin: 0 auto 52px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__developers {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 34px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 22px;
+  }
 }
