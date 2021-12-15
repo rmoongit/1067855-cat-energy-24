@@ -33,4 +33,5 @@ function initMap() {
     icon: 'map-pin.png',
     draggable: false
   });
+  initMap();
 }

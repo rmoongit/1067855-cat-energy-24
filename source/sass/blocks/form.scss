@@ -9,7 +9,11 @@
 }
 
 .form__types-item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
 }
 
 textarea {
@@ -27,17 +31,34 @@ textarea {
 }
 
 .form__types {
+  border-top: 1px solid $bg-grey;
+  border-bottom: 1px solid $bg-grey;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2;
   }
 }
 
 .form__types-wrapper {
-  padding: 25px 0;
+  padding-top: 22px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $bg-grey;
+  }
 }
 
 .form__parameters-list {
   padding-bottom: 27px;
+}
+
+.form__comments {
+  display: block;
 }
 
 .form__comments-title {
@@ -50,6 +71,7 @@ textarea {
 }
 
 .form__contact-title {
+  width: 216px;
   margin: 0 0 37px;
 }
 
@@ -60,7 +82,13 @@ textarea {
   }
 }
 
+.form__extra {
+  padding-bottom: 32px;
+}
+
 .form__extra-wrapper {
+  padding: 0 0 41px 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +99,7 @@ textarea {
 }
 
 .form__extra-choice:not(:last-of-type) {
-  margin-bottom: 13px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -102,7 +130,24 @@ textarea {
 }
 
 .form__extra-button {
+  margin-bottom: 21px;
+
   @media (min-width: $tablet-width) {
     width: 282px;
+  }
+}
+
+.form__line {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: $green;
+    left: 50%;
+    top: 14px;
+    z-index: 0;
   }
 }

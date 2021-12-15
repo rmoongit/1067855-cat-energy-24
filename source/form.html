@@ -55,12 +55,12 @@
   </section>
 
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="form__container container">
+    <div class="form__container">
 
       <section class="form__parameters">
         <h2 class="visually-hidden">Параметры</h2>
         <div class="form__parameters-wrapper">
-          <div class="form__parameters-list">
+          <div class="form__parameters-list container">
 
             <label class="form__parameters-item field-text" for="name">
               <span class="field-text__name">Имя:*</span>
@@ -79,19 +79,19 @@
           </div>
 
           <div class="form__types">
-            <div class="form__types-wrapper">
+            <div class="form__types-wrapper container">
               <label class="form__types-item choice choice--radio">
-                <input class="choice__input" type="radio" name="parameters" value="diet" checked>
+                <input class="choice__input visually-hidden" type="radio" name="parameters" value="diet" checked>
                 <span class="choice__name">похудение</span>
               </label>
 
               <label class="form__types-item choice choice--radio">
-                <input class="choice__input" type="radio" name="parameters" value="weight-increase">
+                <input class="choice__input visually-hidden" type="radio" name="parameters" value="weight-increase">
                 <span class="choice__name">Набор массы</span>
               </label>
 
               <label class="form__types-item choice choice--radio">
-                <input class="choice__input" type="radio" name="parameters" value="advice">
+                <input class="choice__input visually-hidden" type="radio" name="parameters" value="advice">
                 <span class="choice__name">Не знаю (Нужен ваш совет)</span>
               </label>
             </div>
@@ -100,7 +100,8 @@
         </div>
       </section>
 
-      <div class="form__contact">
+      <div class="container">
+      <div class="form__contact form__line">
         <h2 class="form__contact-title title">Контактные данные
           (владельца кота)</h2>
         <div class="form__contact-wrapper">
@@ -116,32 +117,32 @@
         </div>
       </div>
 
-      <label class="form__comments">
+      <label class="form__comments form__line">
         <span class="form__comments-title title">Комментарий</span>
         <textarea name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </label>
 
-      <div class="form__extra">
+      <div class="form__extra form__line">
         <h2 class="form__extra-title title">Дополнительно</h2>
         <div class="form__extra-wrapper">
 
           <label class="form__extra-choice choice">
-            <input class="choice__item" type="checkbox" name="sweetener" value="sweetener" checked>
+            <input class="choice__input visually-hidden" type="checkbox" name="sweetener" value="sweetener" checked>
             <span class="choice__name">сахарозаменитель</span>
           </label>
 
           <label class="form__extra-choice choice">
-            <input class="choice__item" type="checkbox" name="water" value="water">
+            <input class="choice__input visually-hidden" type="checkbox" name="water" value="water">
             <span class="choice__name">питьевая вода</span>
           </label>
 
           <label class="form__extra-choice choice">
-            <input class="choice__item" type="checkbox" name="milk" value="milk">
+            <input class="choice__input visually-hidden" type="checkbox" name="milk" value="milk">
             <span class="choice__name">молоко</span>
           </label>
 
           <label class="form__extra-choice choice">
-            <input class="choice__item" type="checkbox" name="vitamins" value="vitamins">
+            <input class="choice__input visually-hidden" type="checkbox" name="vitamins" value="vitamins">
             <span class="choice__name">витамины</span>
           </label>
         </div>
@@ -151,7 +152,9 @@
 
       </div>
     </div>
+    </div>
   </form>
+
 
   <section class="address address--background">
     <h2 class="visually-hidden">Локация</h2>

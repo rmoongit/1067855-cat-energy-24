@@ -1,7 +1,5 @@
 .select-programm {
   padding: 27px 0 39px;
-  outline: 2px solid $green;
-  outline-offset: -3px;
 }
 
 .select-programm__wrapper {
@@ -16,10 +14,20 @@
   line-height: 36px;
   color: $black;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .select-programm__text {
   margin: 0;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
