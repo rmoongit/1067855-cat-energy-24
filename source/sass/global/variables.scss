@@ -11,6 +11,7 @@ $special-grey: #ebebeb;
 $icon-color: #666666;
 $bg-grey: #d9d9d9;
 $bg-grey-light: #eaeaea;
+$scale-bg: #dcdcdc;
 
 //shadows
 $radio-shadows: 0 1px 3px 0 #00000029;
@@ -19,12 +20,15 @@ $radio-shadows-hover:  0 2px 4px 0 #00000030;
 
 //hover active
 $green-line: #68b738;
+$button-hover: #5eaa2f;
 $border-hover: #cdcdcd;
 $border-focus: #444444;
+$white-rgb: rgba(255, 255, 255, 0.3);
+$black-rgb: rgba(0, 0, 0, 0.1);
 
 //borders
 $border-error: #ff8282;
-$border-grey: #e7e7e7;
+$border-grey: #e6e6e6;
 
 //fonts
 $main-font: "Oswald", sans-serif;
@@ -32,6 +36,6 @@ $arial: "Arial", sans-serif;
 
 
 //size
-
+$mobile-only: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;

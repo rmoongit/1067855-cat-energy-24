@@ -1,5 +1,91 @@
 .scale {
   display: flex;
-  outline: 2px solid $black;
-  outline-offset: -3px;
+  justify-content: center;
+  column-gap: 25px;
+  align-items: center;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 25px;
+    width: 592px;
+  }
+}
+
+.scale__button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $main-font;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 5px 0;
+    border-bottom: 1px dashed $black-rgb;
+
+    &:hover {
+      border-bottom: 1px solid $black-rgb;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}
+
+.scale__bar {
+  width: 86px;
+  height: 14px;
+  background-color: $white;
+  border-radius: 6px;
+  border: 1px solid $border-hover;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    background-color: $scale-bg;
+  }
+}
+
+.scale__bar-into {
+  display: block;
+  width: 36px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: $green;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10%;
+  position: absolute;
+  cursor: pointer;
+  box-shadow: $radio-shadows;
+
+  &:active {
+    border: 1px solid $green;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    left: 156px;
+    border: 1px solid $border-hover;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      transform: translateY(-50%);
+      top: 50%;
+      left: 41%;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+  }
 }

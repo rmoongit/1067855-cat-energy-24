@@ -1,4 +1,15 @@
 .map {
   outline: 2px solid $green;
   outline-offset: -3px;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  iframe {
+    border: none;
+    display: block;
+    width: 100%;
+  }
 }

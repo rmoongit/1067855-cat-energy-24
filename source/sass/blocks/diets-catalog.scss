@@ -1,7 +1,5 @@
 .diets-catalog {
   margin-bottom: 20px;
-  outline: 2px solid $green;
-  outline-offset: -3px;
 }
 
 .diets-catalog__wrapper {
@@ -13,12 +11,64 @@
 }
 
 .diets-catalog__diet {
+  position: relative;
+  padding: 18px 20px;
   margin-bottom: 20px;
-  background-color: $bg-grey;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 52px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    background-color: $bg-grey;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    height: 374px;
+    min-height: 374px;
+  }
+}
+
+.diets-catalog__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.diets-catalog__image {
+  margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    right: -130px;
+    transform: translate(-50%, -50%);
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: initial;
+    transform: initial;
+    width: 134px;
+    height: 100px;
+    margin-right: 50px;
   }
 }
 
@@ -27,6 +77,7 @@
   line-height: 37px;
   margin: 0;
   font-weight: 400;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -37,30 +88,51 @@
 .diets-catalog__text {
   font-family: $arial;
   color: $grey;
-  margin: 0;
+  margin: 0 0 38px 0;
 
   @media (min-width: $tablet-width) {
     @include tablet-fonts;
+    color: $black;
+    padding: 0 260px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 23px;
   }
 }
 
 .diets-catalog__arrow {
-  position: relative;
   text-transform: uppercase;
   margin: 0;
 
   a {
+    position: relative;
+    display: block;
     color: $black;
     text-decoration: none;
     font-size: 16px;
     line-height: 16px;
 
+    &:hover {
+      &::after {
+        width: 33px;
+        background-image: url("../img/icons/icon-right-arrow-long.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     &::after {
       position: absolute;
       content: "";
-      background-image: url("../img/icons/icon-right-arrow.svg");
+      background-image: url("../img/icons/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
+      background-position: right;
       top: 50%;
-      left: 45%;
+      left: 150px;
       transform: translate(-50%, -50%);
       width: 24px;
       height: 10px;

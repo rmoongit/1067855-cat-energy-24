@@ -1,8 +1,6 @@
 .nutrition {
   margin-bottom: 20px;
   position: relative;
-  outline: 2px solid $black;
-  outline-offset: 1px;
   background-image: url("../img/cat-background.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -28,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -35px;
+    margin-top: -77px;
     margin-bottom: 82px;
     background-image: url("../img/cat-background-desktop.jpg");
     background-position: top right;
@@ -39,7 +37,7 @@
       width: 50%;
       right: 0;
       left: inherit;
-      height: 638px;
+      height: 100%;
       background-color: $green-cat;
     }
   }
@@ -53,6 +51,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 132px;
+  }
 }
 
 .nutrition__title {
@@ -61,12 +63,17 @@
   color: $white;
   text-align: center;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
     @include tablet-title;
     text-align: start;
     grid-column: 1;
+    margin: 0 0 41px 87px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 
@@ -75,7 +82,8 @@
   line-height: 14px;
   color: $white;
   text-align: center;
-  margin: 0;
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -84,13 +92,26 @@
     color: $black;
     font-size: 20px;
     line-height: 20px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 
-.nutrition__link {
+.nutrition__link-button {
+  font-size: 14px;
+  line-height: 18px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/1;
     grid-row: 3;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 
@@ -100,10 +121,12 @@
     grid-row: 4;
     width: 709px;
     height: 609px;
+    margin-top: -70px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
     grid-row: 1/5;
+    margin-right: 64px;
   }
 }

@@ -1,5 +1,52 @@
 .burger {
-  outline: 2px solid $green;
+  border: none;
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $green;
+  cursor: pointer;
+  right: 30px;
+  top: -55px;
+
+  &--closed {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icons/burger-closed.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 24px;
+      height: 16px;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--opened {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      width: 25px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

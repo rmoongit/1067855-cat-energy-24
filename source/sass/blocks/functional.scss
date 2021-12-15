@@ -1,7 +1,5 @@
 .functional {
   margin-bottom: 49px;
-  outline: 2px solid $green;
-  outline-offset: -3px;
 
   img {
     margin-right: 20px;
@@ -29,14 +27,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 37px;
   }
 }
 
 .functional__item {
   display: flex;
-  flex-wrap: wrap;
+
 
   @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
     position: relative;
     width: 250px;
     height: 280px;
@@ -76,5 +76,12 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-fonts;
+  }
+}
+
+.functional__img {
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
   }
 }
