@@ -4,7 +4,11 @@
 
 .form__container {
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    max-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
   }
 }
 
@@ -27,6 +31,7 @@ textarea {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 569px 568px;
+    justify-content: space-between;
   }
 }
 
@@ -50,6 +55,7 @@ textarea {
 
   @media (min-width: $tablet-width) {
     border: 1px solid $bg-grey;
+    padding-left: 27px;
   }
 }
 
@@ -73,12 +79,21 @@ textarea {
 .form__contact-title {
   width: 216px;
   margin: 0 0 37px;
+
+  @media (min-width: $tablet-width) {
+    width: 384px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 634px;
+  }
 }
 
 .form__contact-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding: 70px 0;
   }
 }
 
@@ -123,9 +138,10 @@ textarea {
   font-size: 14px;
   line-height: 16px;
   font-family: $arial;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-right: 80px;
+    float: right;
   }
 }
 
@@ -135,19 +151,37 @@ textarea {
   @media (min-width: $tablet-width) {
     width: 282px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
 .form__line {
   position: relative;
 
-  &::after {
+  @media (min-width: $tablet-width) {
+    left: -40px;
+  }
+
+  &::after,
+  &::before {
     position: absolute;
     content: "";
-    width: 50%;
-    height: 2px;
+    width: 100vw;
+    height: 3px;
     background-color: $green;
-    left: 50%;
     top: 14px;
-    z-index: 0;
+    z-index: -1;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 30px;
+    }
+  }
+
+  &::after {
+    left: 20px;
   }
 }
