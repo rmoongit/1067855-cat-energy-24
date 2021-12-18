@@ -1,14 +1,34 @@
 .contains {
-  outline: 2px solid $black;
-  outline-offset: -3px;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+  }
 }
 
 .contains__title {
-  margin: 0;
+  margin: 0 0 18px 0;
   line-height: 20px;
   font-weight: 400;
   width: 78px;
+  text-transform: uppercase;
+  color: $hex;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 21px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .contains__list {
@@ -22,4 +42,11 @@
   color: $grey;
   font-family: $arial;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-bottom: 9px;
+    padding-top: 5px;
+    border-bottom: 1px solid $border-hover;
+  }
 }

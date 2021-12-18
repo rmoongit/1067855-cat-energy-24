@@ -3,8 +3,6 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 289px;
-  outline: 2px solid $black;
-  outline-offset: 1px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bagpack-tablet.png");
@@ -14,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/bagpack-desktop.png");
+    background-size: cover;
   }
 
   &::after {

@@ -1,14 +1,15 @@
 .form {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .form__container {
   @media (min-width: $tablet-width) {
-    max-width: 630px;
+    padding: 0 70px 0;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
+  @include desktop;
   }
 }
 
@@ -154,34 +155,5 @@ textarea {
 
   @media (min-width: $desktop-width) {
     width: 568px;
-  }
-}
-
-.form__line {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    left: -40px;
-  }
-
-  &::after,
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 3px;
-    background-color: $green;
-    top: 14px;
-    z-index: -1;
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      right: 30px;
-    }
-  }
-
-  &::after {
-    left: 20px;
   }
 }

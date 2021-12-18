@@ -13,6 +13,7 @@
 
   &:hover {
     background-color: $button-hover;
+    box-shadow: $grey-button;
   }
 
   &:active {
