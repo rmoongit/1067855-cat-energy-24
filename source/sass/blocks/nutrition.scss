@@ -4,6 +4,11 @@
   background-image: url("../img/cat-background.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-background@2x.jpg");
+  }
 
   &::after {
     position: absolute;
@@ -26,11 +31,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -77px;
+    margin-top: -140px;
     margin-bottom: 82px;
     background-image: url("../img/cat-background-desktop.jpg");
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: 720px 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-background-desktop@2x.jpg");
+    }
 
     &::after {
       content: "";
@@ -52,8 +62,8 @@
     grid-template-rows: auto;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 132px;
+  @media (min-width: $desktop-width) {
+    padding-top: 210px;
   }
 }
 
@@ -117,16 +127,26 @@
 
 .nutrition__image {
   @media (min-width: $tablet-width) {
-    grid-column: 1/-1;
-    grid-row: 4;
     width: 709px;
     height: 609px;
     margin-top: -70px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 210px;
+    width: 552px;
+    height: auto;
+  }
+}
+
+.nutrition__picture {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 4;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-column: 2;
     grid-row: 1/5;
-    margin-right: 64px;
   }
 }

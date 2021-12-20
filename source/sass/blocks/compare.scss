@@ -13,16 +13,30 @@
   }
 }
 
-.compare__image {
-  img {
-    @media (min-width: $tablet-width) {
-      width: 591px;
-      height: 576px;
-    }
+.compare__wrapper {
+  position: relative;
+}
 
-    @media (min-width: $desktop-width) {
-      width: 592px;
-      height: 511px;
+.compare__before,
+.compare__after {
+  overflow: hidden;
+  position: relative;
+}
+
+.compare__img {
+  &--after {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 511px;
+    width: 100%;
+    margin: 0 auto;
+
+    &--after {
+      display: block;
+      position: absolute;
+      width: 50%;
     }
   }
 }

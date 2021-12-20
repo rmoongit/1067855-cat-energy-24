@@ -14,7 +14,11 @@
 <header class="header header--border">
   <div class="header__wrapper container">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/header-logo-cat.svg" width="191" height="38" alt="Логотип шапки Кэт">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-image" src="img/header-logo-cat.svg" width="191" height="38" alt="Логотип шапки Кэт">
+      </picture>
     </a>
 
     <nav class="header__nav nav">
