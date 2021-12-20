@@ -1,3 +1,12 @@
+.header {
+  &--border {
+    border-bottom: 1px solid $bg-grey;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+}
 
 .header__wrapper {
   display: block;

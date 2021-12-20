@@ -1,8 +1,14 @@
 .extra-goods {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .extra-goods__wrapper {
+  overflow-x: hidden;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 896px 245px;
@@ -25,17 +31,29 @@
   line-height: 26px;
   font-weight: 400;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1;
     grid-row: 1;
+    width: 445px;
   }
 }
 
 .extra-goods__list {
   @include clear-list;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
+    margin-right: 79px;
+    margin-bottom: 0;
   }
 }
 
@@ -46,28 +64,36 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  border-top: 1px solid $border-hover;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 132px 50px;
+    grid-template-columns: 1fr 181px 50px;
     padding-top: 27px;
     padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 150px 50px 1fr;
+    grid-template-columns: 1fr 1fr 80px 244px;
+    align-items: center;
   }
+}
+
+.extra-goods__item:last-child {
+  border-bottom: 1px solid $border-hover;
 }
 
 .extra-goods__text {
   text-transform: uppercase;
-  color: $black;
+  color: $hex;
   line-height: 16px;
   margin: 0 0 13px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -97,6 +123,9 @@
 }
 
 .extra-goods__link {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     grid-column: 1/-1;

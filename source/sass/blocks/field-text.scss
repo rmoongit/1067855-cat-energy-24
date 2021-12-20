@@ -14,6 +14,11 @@
   font-size: 16px;
   color: $grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-text__input,
@@ -28,6 +33,11 @@ textarea {
   font-family: $main-font;
   outline: none;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-text__input {

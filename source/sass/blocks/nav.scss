@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    max-width: 440px;
+    max-width: 480px;
   }
 }
 
@@ -49,6 +49,7 @@
   border-top: 1px solid $border-grey;
   padding: 23px 0;
   text-align: center;
+  text-transform: uppercase;
 
   &:hover {
     opacity: 0.6;
@@ -61,9 +62,14 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 5px 0;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 29px;
+
     &--color {
       color: $white;
     }
