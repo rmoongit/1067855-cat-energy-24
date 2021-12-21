@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon/16.png" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -58,8 +60,11 @@
 
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__img" src="img/small-chicken-mobile.png" width="68" height="86"
-               alt="питание с курицей 500г">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/small-chicken-desktop.png, img/small-chicken-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/small-chicken-tablet.png, img/small-chicken-tablet@2x.png 2x">
+          <img class="catalog__img" src="img/small-chicken-mobile.png" srcset="img/small-chicken-mobile@2x.png 2x" width="68" height="86" alt="питание с курицей 500г">
+          </picture>
         </a>
 
         <div class="catalog__description contains">
@@ -86,8 +91,11 @@
 
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__img" src="img/big-chicken-mobile.png" width="84" height="100"
-               alt="питание с курицей 1000г">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/big-chicken-desktop.png, img/big-chicken-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/big-chicken-tablet.png, img/big-chicken-tablet@2x.png 2x">
+          <img class="catalog__img" src="img/big-chicken-mobile.png" srcset="img/big-chicken-mobile@2x.png 2x" width="84" height="101" alt="питание с курицей 1000г">
+          </picture>
         </a>
 
         <div class="catalog__description contains">
@@ -114,7 +122,11 @@
 
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__img" src="img/small-fish-mobile.png" width="68" height="78" alt="питание с рыбой 500г">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/small-fish-desktop.png, img/small-fish-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/small-fish-tablet.png, img/small-fish-tablet@2x.png 2x">
+          <img class="catalog__img" src="img/small-fish-mobile.png" srcset="img/small-fish-mobile@2x.png 2x" width="68" height="78" alt="питание с рыбой 500г">
+          </picture>
         </a>
 
         <div class="catalog__description contains">
@@ -141,7 +153,11 @@
 
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__img" src="img/big-fish-mobile.png" width="84" height="100" alt="питание с рыбой 1000г">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/big-fish-desktop.png, img/big-fish-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/big-fish-tablet.png, img/big-fish-tablet@2x.png 2x">
+          <img class="catalog__img" src="img/big-fish-mobile.png" srcset="img/big-fish-mobile@2x.png 2x" width="84" height="101" alt="питание с рыбой 1000г">
+          </picture>
         </a>
 
         <div class="catalog__description contains">
@@ -168,8 +184,11 @@
 
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__img" src="img/small-buckwheat-mobile.png" width="68" height="78"
-               alt="питание с гречкой 500г">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/small-buckwheat-desktop.png, img/small-buckwheat-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/small-buckwheat-tablet.png, img/small-buckwheat-tablet@2x.png 2x">
+          <img class="catalog__img" src="img/small-buckwheat-mobile.png" srcset="img/small-buckwheat-mobile@2x.png 2x" width="68" height="78" alt="питание с гречкой 500г">
+          </picture>
         </a>
 
         <div class="catalog__description contains">
@@ -196,8 +215,11 @@
 
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__img" src="img/big-buckwheat-mobile.png" width="84" height="100"
-               alt="питание с гречкой 1000г">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/big-buckwheat-desktop.png, img/big-buckwheat-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/big-buckwheat-tablet.png, img/big-buckwheat-tablet@2x.png 2x">
+          <img class="catalog__img" src="img/big-buckwheat-mobile.png" srcset="img/big-buckwheat-mobile@2x.png 2x" width="84" height="100" alt="питание с гречкой 1000г">
+          </picture>
         </a>
 
         <div class="catalog__description contains">
@@ -224,7 +246,11 @@
 
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__img" src="img/small-rice-mobile.png" width="72" height="84" alt="питание с рисом 500г">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/small-rice-desktop.png, img/small-rice-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/small-rice-tablet.png, img/small-rice-tablet@2x.png 2x">
+          <img class="catalog__img" src="img/small-rice-mobile.png" srcset="img/small-rice-mobile@2x.png 2x" width="72" height="84" alt="питание с рисом 500г">
+          </picture>
         </a>
 
         <div class="catalog__description contains">
@@ -329,7 +355,9 @@
   <div class="footer__wrapper container">
 
     <div class="footer__logo">
-      <img class="footer__image" src="img/logo-energy.svg" width="128" height="24" alt="Логотип енерджи">
+      <a href="#">
+        <img class="footer__image" src="img/logo-energy.svg" width="128" height="24" alt="Логотип енерджи">
+      </a>
     </div>
 
     <div class="footer__icons">
@@ -366,7 +394,6 @@
       </p>
     </div>
   </div>
-
 </footer>
 
 <script src="js/script.js"></script>

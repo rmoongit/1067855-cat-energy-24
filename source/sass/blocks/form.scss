@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-  @include desktop;
+    @include desktop;
   }
 }
 
@@ -148,6 +148,7 @@ textarea {
 
 .form__extra-button {
   margin-bottom: 21px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 282px;

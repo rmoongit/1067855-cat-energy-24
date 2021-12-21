@@ -80,6 +80,8 @@
 }
 
 .catalog__link {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -102,11 +104,7 @@
 }
 
 .catalog__img {
-  width: 140px;
-  height: 144px;
-
   @media (min-width: $tablet-width) {
     width: 168px;
-    height: 200px;
   }
 }

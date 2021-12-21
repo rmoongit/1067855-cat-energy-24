@@ -14,13 +14,20 @@
 }
 
 .compare__wrapper {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .compare__before,
 .compare__after {
-  overflow: hidden;
-  position: relative;
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
 }
 
 .compare__img {
@@ -30,13 +37,17 @@
 
   @media (min-width: $tablet-width) {
     height: 511px;
-    width: 100%;
-    margin: 0 auto;
+    min-width: 592px;
+    position: relative;
+
+    &--before {
+      right: -75px;
+    }
 
     &--after {
       display: block;
       position: absolute;
-      width: 50%;
+      left: -270px;
     }
   }
 }
