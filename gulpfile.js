@@ -26,6 +26,12 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+//Reload
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
@@ -47,7 +53,7 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg,svg}')
     .pipe(gulp.dest('build/img'))
 }
 
@@ -98,7 +104,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -111,7 +117,7 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
