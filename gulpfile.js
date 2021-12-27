@@ -10,7 +10,8 @@ import csso from 'postcss-csso';
 import svgstore from 'gulp-svgstore';
 import squoosh from 'gulp-libsquoosh';
 import webp from 'gulp-webp';
-import svgo from 'gulp-svgmin'
+import svgo from 'gulp-svgmin';
+import terser from 'gulp-terser';
 
 // Styles
 export const styles = () => {
@@ -41,6 +42,8 @@ const html = () => {
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/script.js')
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -74,7 +77,6 @@ const svg = () =>
 
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
     }))

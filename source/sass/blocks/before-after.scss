@@ -158,7 +158,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 174px;
+    width: 189px;
+    font-size: 20px;
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;

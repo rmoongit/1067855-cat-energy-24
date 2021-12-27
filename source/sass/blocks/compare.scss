@@ -22,7 +22,7 @@
 .compare__picture {
   @media (min-width: $tablet-width) {
     position: relative;
-    min-height: 511px;
+    min-height: 576px;
     overflow: hidden;
     width: 50%;
     left: 0;
@@ -37,20 +37,28 @@
 
   @media (min-width: $tablet-width) {
     min-height: 511px;
-    min-width: 592px;
+    min-width: 536px;
 
 
     &--before {
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 100px;
+
+      @media (min-width: $desktop-width) {
+        left: 135px;
+      }
     }
 
     &--after {
       position: absolute;
       display: block;
-      right: 0;
+      right: 70px;
       bottom: 0;
+
+      @media (min-width: $desktop-width) {
+        right: 100px;
+      }
     }
   }
 }

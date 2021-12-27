@@ -1,9 +1,5 @@
 .functional {
   margin-bottom: 49px;
-
-  img {
-    margin-right: 20px;
-  }
 }
 
 .functional__title {
@@ -80,6 +76,9 @@
 }
 
 .functional__img {
+  flex-shrink: 0;
+  margin-right: 20px;
+
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;

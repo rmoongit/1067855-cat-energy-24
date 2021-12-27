@@ -110,15 +110,15 @@
 
   <div class="container form__container">
     <div class="form__contact">
-      <h2 class="form__contact-title title form__line">Контактные данные
+      <h2 class="form__contact-title title">Контактные данные
         (владельца кота)</h2>
       <div class="form__contact-wrapper">
-        <label class="field-text field-text--email">
+        <label class="field-text field-text--icon field-text--email">
           <span class="field-text__name">E-mail:*</span>
           <input class="field-text__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
         </label>
 
-        <label class="field-text field-text--phone">
+        <label class="field-text field-text--icon field-text--phone">
           <span class="field-text__name">Телефон:*</span>
           <input class="field-text__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
         </label>
@@ -126,12 +126,12 @@
     </div>
 
     <label class="form__comments">
-      <span class="form__comments-title title form__line">Комментарий</span>
+      <span class="form__comments-title title">Комментарий</span>
       <textarea name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
     </label>
 
     <div class="form__extra">
-      <h2 class="form__extra-title title form__line">Дополнительно</h2>
+      <h2 class="form__extra-title title">Дополнительно</h2>
       <div class="form__extra-wrapper">
 
         <label class="form__extra-choice choice">
@@ -191,17 +191,23 @@
 
         <li class="footer__item">
           <a href="#">
-            <img src="img/icons/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте">
+            <svg class="footer__icon-img" width="23" height="16" aria-label="ссылка на вконтакте">
+              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="footer__item">
           <a href="#">
-            <img src="img/icons/icon-instagram.svg" width="16" height="16" alt="Инстаграмм">
+            <svg class="footer__icon-img" width="16" height="16" aria-label="ссылка на инстаграмм">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
           </a>
         </li>
         <li class="footer__item">
           <a href="#">
-            <img src="img/icons/icon-facebook.svg" width="22" height="22" alt="Фейсбук">
+            <svg class="footer__icon-img" width="22" height="22" aria-label="ссылка на фейсбук">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -215,13 +221,15 @@
       </p>
       <p class="footer__developers-logo">
         <a href="#">
-          <img src="img/logo-footer-icon.svg" width="27" height="34" alt="Иконка разработчика">
+          <svg class="footer__developers-img" width="27" height="34" aria-label="ссылка на htmlacademy">
+            <use xlink:href="img/sprite.svg#logo-footer-icon"></use>
+          </svg>
         </a>
       </p>
     </div>
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 
 </body>
