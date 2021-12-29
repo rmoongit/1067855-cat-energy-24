@@ -29,7 +29,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    column-gap: 35px;
+    column-gap: 24px;
+    padding-top: 10px;
   }
 }
 
@@ -61,7 +62,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 5px 0;
+    padding: 0 0 5px;
     font-size: 18px;
     line-height: 24px;
   }

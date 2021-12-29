@@ -1,5 +1,4 @@
 .before-after {
-  padding: 25px 0 25px 0;
   background-color: $bg-grey-light;
 
   @media (min-width: $tablet-width) {
@@ -25,6 +24,8 @@
 }
 
 .before-after__wrapper {
+  padding: 25px 20px 1px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
@@ -55,9 +56,8 @@
 
 .before-after__text {
   font-family: $arial;
-  margin: 0;
+  margin: 0 0 20px;
   color: $grey;
-  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     @include tablet-fonts;
@@ -97,7 +97,7 @@
 .before-after__item {
   border: 1px solid $border-hover;
   border-radius: 5px;
-  padding: 13px 0 18px;
+  padding: 13px 0 11px;
   position: relative;
   text-align: center;
   width: 124px;
@@ -123,6 +123,7 @@
 
 .before-after__sub-text {
   margin: 0;
+  line-height: 12px;
   color: $grey;
   font-family: $arial;
   text-align: center;

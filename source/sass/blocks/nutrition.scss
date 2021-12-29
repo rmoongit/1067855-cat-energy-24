@@ -57,6 +57,7 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 36px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -68,7 +69,7 @@
 }
 
 .nutrition__title {
-  font-size: 34px;
+  font-size: 36px;
   line-height: 36px;
   color: $white;
   text-align: center;
@@ -82,7 +83,7 @@
     margin: 0 0 41px 87px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 0;
   }
 }
@@ -102,10 +103,11 @@
     color: $black;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 87px;
+    margin-left: 89px;
+    margin-bottom: 52px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 0;
   }
 }
@@ -117,10 +119,10 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/1;
     grid-row: 3;
-    margin-left: 87px;
+    margin-left: 90px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 0;
   }
 }
@@ -129,7 +131,7 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
-    margin-top: -70px;
+    margin-top: -78px;
   }
 
   @media (min-width: $desktop-width) {

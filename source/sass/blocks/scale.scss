@@ -1,7 +1,7 @@
 .scale {
   display: flex;
   justify-content: center;
-  column-gap: 25px;
+  column-gap: 13px;
   align-items: center;
   cursor: pointer;
 
@@ -21,6 +21,7 @@
   font-weight: 400;
   font-family: $main-font;
   cursor: pointer;
+  padding: 4px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 5px 0;
