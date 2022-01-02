@@ -1,9 +1,23 @@
 .functional {
   margin-bottom: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.functional__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
 }
 
 .functional__title {
-  margin: 0 0 40px;
+  margin: 0 0 41px;
   color: $black;
   font-size: 36px;
   line-height: 40px;
@@ -20,10 +34,15 @@
   counter-reset: itemNum;
 
   @media (min-width: $tablet-width) {
+    padding-top: 32px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 37px;
+    column-gap: 135px;
+    row-gap: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
   }
 }
 
@@ -32,11 +51,12 @@
 
 
   @media (min-width: $tablet-width) {
-    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     width: 250px;
     height: 280px;
     z-index: 1;
+    row-gap: 32px;
 
     &::after {
       counter-increment: itemNum;
@@ -44,7 +64,7 @@
       position: absolute;
       z-index: -1;
       top: -40px;
-      left: 120px;
+      left: 115px;
       font-family: $main-font;
       font-size: 280px;
       line-height: 280px;
@@ -70,14 +90,22 @@
   margin: 0;
   color: $grey;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     @include tablet-fonts;
+
+    br {
+      display: block;
+    }
   }
 }
 
 .functional__img {
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 24px;
 
   @media (min-width: $tablet-width) {
     width: 80px;

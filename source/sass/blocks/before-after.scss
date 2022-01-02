@@ -2,13 +2,12 @@
   background-color: $bg-grey-light;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($white 0%, $white 57%, $basic-grey 57%, $basic-grey 100%);
+    background-image: linear-gradient($white 0%, $white 50%, $basic-grey 57%, $basic-grey 100%);
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 43px 0 25px 0;
-    background-image: linear-gradient($white 0%, $white 29%, $basic-grey 29%, $basic-grey 100%);
+    background-image: linear-gradient($white 0%, $white 27%, $basic-grey 27%, $basic-grey 100%);
 
     &::after {
       content: "";
@@ -24,9 +23,10 @@
 }
 
 .before-after__wrapper {
-  padding: 25px 20px 1px;
+  padding: 24px 17px 1px 23px;
 
   @media (min-width: $tablet-width) {
+    padding: 1px 30px 14px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -34,6 +34,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 436px 1fr;
+    align-items: self-start;
+    padding: 0 110px 55px;
   }
 }
 
@@ -47,10 +49,12 @@
   @media (min-width: $tablet-width) {
     @include tablet-title;
     grid-column: 1;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 146px;
+    margin-bottom: 120px;
+    padding-top: 30px;
   }
 }
 
@@ -62,14 +66,20 @@
   @media (min-width: $tablet-width) {
     @include tablet-fonts;
     padding-right: 32px;
+    margin: 0 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    margin-bottom: 70px;
   }
 }
 
 .before-after__days {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    column-gap: 155px;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +101,7 @@
   @media (min-width: $desktop-width) {
     justify-content: center;
     column-gap: 42px;
+    margin-bottom: 42px;
   }
 }
 
@@ -104,7 +115,7 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    padding: 15px 30px 18px;
+    padding: 15px 20px 3px;
   }
 }
 
@@ -118,6 +129,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
@@ -159,11 +172,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding: 12px 0 0 0;
+    row-gap: 10px;
     width: 189px;
     font-size: 20px;
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -173,7 +189,7 @@
     column-gap: 30px;
 
     span {
-      margin-left: 63px;
+      margin-left: 29px;
     }
   }
 }

@@ -3,10 +3,10 @@
   padding: 39px 20px 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 30px;
+    padding: 54px 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,15 +20,16 @@
   justify-content: center;
   align-items: center;
   column-gap: 35px;
-  padding: 19px 0;
+  padding: 18px 0;
   border-top: 1px solid $bg-grey;
   border-bottom: 1px solid $bg-grey;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 0 5px 25px;
     margin: 0;
     border: none;
+    column-gap: 24px;
   }
 }
 
@@ -61,7 +62,6 @@
 
 .footer__icon-img {
   @media (min-width: $tablet-width) {
-
     &--vkontakte {
       width: 30px;
       height: 22px;
@@ -76,5 +76,13 @@
       width: 28px;
       height: 33px;
     }
+  }
+}
+
+.footer__html-academy-logo {
+  margin-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }

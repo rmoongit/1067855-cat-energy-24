@@ -14,6 +14,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .diets-catalog__diet {
@@ -23,11 +27,12 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 75px 52px 65px;
+    padding: 74px 52px 62px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 52px 0;
+    padding: 45px 0 0 35px;
+    margin-bottom: 0;
   }
 
   &::after {
@@ -46,7 +51,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
     min-height: 374px;
   }
 }
@@ -83,7 +87,7 @@
     transform: initial;
     width: 134px;
     height: 100px;
-    margin-right: 50px;
+    margin-right: 45px;
   }
 }
 
@@ -97,6 +101,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 5px;
   }
 }
 
@@ -113,8 +118,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    margin-bottom: 23px;
+    padding: 18px 40px 17px 16px;
+    margin-bottom: 12px;
   }
 }
 
@@ -155,11 +160,19 @@
       @media (min-width: $tablet-width) {
         left: 143px;
       }
+
+      @media (min-width: $desktop-width) {
+        left: 162px;
+      }
     }
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 18px;
     }
   }
 }

@@ -14,15 +14,16 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 56px 70px;
+    padding: 65px 70px 56px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 565px;
+    padding: 65px 70px 56px 70px;
+    top: 92px;
+    left: 115px;
     background-color: $white;
-    left: 110px;
-    top: 98px;
   }
 }
 
@@ -54,7 +55,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 106px;
+      padding-left: 86px;
+      text-align: start;
     }
   }
 

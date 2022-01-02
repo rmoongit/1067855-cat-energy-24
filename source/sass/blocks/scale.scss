@@ -1,7 +1,7 @@
 .scale {
   display: flex;
   justify-content: center;
-  column-gap: 13px;
+  column-gap: 18px;
   align-items: center;
   cursor: pointer;
 
@@ -9,6 +9,11 @@
     column-gap: 25px;
     width: 592px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 auto;
+    padding-top: 0;
   }
 }
 
@@ -24,6 +29,7 @@
   padding: 4px 0 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     padding: 0 0 5px 0;
     border-bottom: 1px dashed $black-rgb;
 
@@ -74,7 +80,7 @@
     border-radius: 50%;
     width: 34px;
     height: 34px;
-    left: 156px;
+    left: 197px;
     border: 1px solid $border-hover;
     position: relative;
 

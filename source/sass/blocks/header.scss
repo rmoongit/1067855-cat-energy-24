@@ -24,6 +24,8 @@
 
   @media (min-width: $desktop-width) {
     @include desktop;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
@@ -45,5 +47,14 @@
 
   @media (min-width: $desktop-width) {
     width: 202px;
+    margin-left: 5px;
+  }
+}
+
+.header__logo-image {
+  margin-left: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }

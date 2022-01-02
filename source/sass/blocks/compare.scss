@@ -10,6 +10,7 @@
     grid-column: 2;
     grid-row: 1/3;
     background-color: transparent;
+    margin-bottom: 0;
   }
 }
 
@@ -28,6 +29,12 @@
     left: 0;
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 520px;
+    left: 100px;
+    top: -20px;
+  }
 }
 
 .compare__img {
@@ -36,7 +43,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 511px;
+    min-height: 520px;
     min-width: 536px;
 
 
@@ -44,6 +51,7 @@
       position: absolute;
       bottom: 0;
       left: 100px;
+      max-width: 100%;
 
       @media (min-width: $desktop-width) {
         left: 135px;
@@ -53,12 +61,21 @@
     &--after {
       position: absolute;
       display: block;
-      right: 70px;
+      right: 60px;
       bottom: 0;
 
       @media (min-width: $desktop-width) {
         right: 100px;
       }
     }
+  }
+}
+
+.compare__scale {
+  padding-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+    padding-left: 0;
   }
 }
