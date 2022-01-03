@@ -1,8 +1,11 @@
-.select-programm {
-  padding: 27px 0 39px;
-}
 
 .select-programm__wrapper {
+  padding: 27px 20px 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 70px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
@@ -16,6 +19,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
   }
