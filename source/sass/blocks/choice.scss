@@ -54,6 +54,10 @@
     line-height: 30px;
     margin-left: 61px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 58px;
+  }
 }
 
 .choice__input:checked + .choice__name::before {

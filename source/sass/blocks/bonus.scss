@@ -41,14 +41,15 @@
 
 .bonus__img {
   display: block;
-  margin: 0 auto 48px;
+  margin: 0 auto 52px;
 }
 
 .bonus__text {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0 auto;
   color: $white;
   text-align: center;
   width: 161px;
   font-family: $arial;
-  line-height: 20px;
 }

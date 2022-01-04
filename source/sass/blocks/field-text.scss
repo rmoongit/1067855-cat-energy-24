@@ -12,6 +12,10 @@
       content: "";
       background-color: $black;
       bottom: 16px;
+
+      @media (min-width: $tablet-width) {
+        bottom: 21px;
+      }
     }
 
     &:hover,
@@ -72,6 +76,7 @@ textarea {
 
 .field-text__input {
   padding: 13px 15px;
+
   &:focus-within,
   &:active {
     border: 2px solid $border-focus;
@@ -83,6 +88,10 @@ textarea {
 
   @media (min-width: $desktop-width) {
     width: 486px;
+
+    &--phone {
+      width: 472px;
+    }
   }
 }
 

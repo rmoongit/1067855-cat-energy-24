@@ -1,5 +1,5 @@
 .show-more {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   position: relative;
   background-color: $white;
 
@@ -23,7 +23,7 @@
 
 .show-more__wrapper {
   padding-top: 29px;
-  padding-bottom: 25px;
+  padding-bottom: 2px;
   grid-column: 1/-1;
   flex-grow: 1;
 
@@ -101,7 +101,7 @@
 }
 
 .show-more__img {
-  margin: 0 auto 23px;
+  margin: 0 auto 21px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
