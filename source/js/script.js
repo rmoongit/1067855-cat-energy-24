@@ -1,7 +1,8 @@
 let navMain = document.querySelector('.nav__wrapper');
 let navToggle = document.querySelector('.burger');
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('nav__wrapper--nojs');
+navToggle.classList.remove('burger--nojs');
 
 navToggle.addEventListener('click', function () {
   navMain.classList.toggle('nav__wrapper--closed');

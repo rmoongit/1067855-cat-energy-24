@@ -8,6 +8,7 @@
     background-image: url("../img/bagpack-tablet.png");
     object-fit: cover;
     height: auto;
+    box-shadow: $grey-button;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +25,10 @@
     height: 100%;
     background-color: $green-cat;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -32,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding: 56px 70px 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +48,10 @@
 .bonus__img {
   display: block;
   margin: 0 auto 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+  }
 }
 
 .bonus__text {
@@ -52,4 +62,11 @@
   text-align: center;
   width: 161px;
   font-family: $arial;
+
+  @media (min-width: $tablet-width) {
+    width: 196px;
+    text-align: start;
+    padding-top: 16px;
+    margin-right: 19px;
+  }
 }

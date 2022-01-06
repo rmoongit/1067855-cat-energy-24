@@ -29,6 +29,10 @@
     padding-left: 40px;
     margin-left: -40px;
 
+    &--catalog {
+      margin-left: -3px;
+    }
+
     &::before {
       right: 30px;
     }
@@ -36,5 +40,9 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 40px;
+
+    &--catalog {
+      margin-left: -40px;
+    }
   }
 }

@@ -19,11 +19,12 @@
   color: $hex;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 21px;
+    margin: 0 auto 13px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     width: 167px;
+    padding: 157px 10px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +35,10 @@
 .contains__list {
   width: 100%;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .contains__item {
@@ -46,7 +51,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     padding-top: 5px;
     border-bottom: 1px solid $border-hover;
   }

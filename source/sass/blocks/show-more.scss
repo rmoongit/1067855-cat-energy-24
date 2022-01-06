@@ -1,5 +1,5 @@
 .show-more {
-  margin-bottom: 24px;
+  margin-bottom: 46px;
   position: relative;
   background-color: $white;
 
@@ -28,7 +28,7 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 75px 0 0 0;
+    padding-top: 44px;
   }
 }
 
@@ -41,7 +41,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   br {
@@ -61,7 +63,9 @@
   font-size: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
+    margin-bottom: 85px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   br {
@@ -78,6 +82,11 @@
   background-color: $basic-grey;
   color: $grey;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+    font-size: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 168px;
@@ -104,7 +113,7 @@
   margin: 0 auto 21px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 38px;
     width: 60px;
     height: 60px;
   }
