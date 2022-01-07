@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 74px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .extra-goods__wrapper {
@@ -11,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 896px 245px;
+    grid-template-columns: 896px 325px;
   }
 }
 
@@ -52,7 +56,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
-    margin-right: 79px;
     margin-bottom: 0;
   }
 }
@@ -73,7 +76,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 80px 244px;
+    grid-template-columns: 284px 204px 44px 244px;
+    padding: 14px 0 15px;
     align-items: center;
   }
 }
@@ -95,6 +99,10 @@
     line-height: 20px;
     margin: 0 0 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-goods__count {
@@ -109,6 +117,10 @@
     font-size: 16px;
     margin: 0;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

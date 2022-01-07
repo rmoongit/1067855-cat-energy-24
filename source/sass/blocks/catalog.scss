@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
+  }
 }
 
 .catalog__title {
@@ -94,7 +98,6 @@
     transform: translate(-50%, -50%);
     top: 35px;
     left: 50%;
-    margin: 0 auto;
   }
 }
 

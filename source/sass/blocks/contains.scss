@@ -24,11 +24,12 @@
     line-height: 24px;
     text-align: center;
     width: 167px;
-    padding: 157px 10px 0;
+    padding: 157px 10px 0 17px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
+    padding: 166px 10px 0 17px;
   }
 }
 
@@ -38,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+    padding: 0 3px;
   }
 }
 
