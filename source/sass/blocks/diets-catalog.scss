@@ -65,7 +65,8 @@
   margin-right: 22px;
 
   &--mass {
-    margin-right: 2px;
+    margin-right: 10px;
+    margin-left: -5px;
   }
 
   @media (min-width: $tablet-width) {
@@ -78,7 +79,7 @@
 
     &--mass {
       width: 268px;
-      right: -108px;
+      right: -114px;
     }
   }
 

@@ -4,7 +4,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 77px;
+    margin-bottom: 72px;
   }
 }
 
@@ -20,11 +20,12 @@
   @media (min-width: $tablet-width) {
     @include tablet-title;
     margin-bottom: 163px;
-    padding-top: 41px;
+    padding-top: 38px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 23px;
+    margin-bottom: 165px;
   }
 }
 
@@ -95,17 +96,22 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 35px;
-    left: 50%;
+    bottom: 304px;
+    left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 41px;
+    bottom: 314px;
   }
 }
 
 .catalog__link-button {
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     width: 248px;
     margin: 0 auto;
-    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +122,6 @@
 
 .catalog__img {
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: auto;
   }
 }

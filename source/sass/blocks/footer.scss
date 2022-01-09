@@ -55,12 +55,32 @@
   align-items: center;
   max-height: 34px;
 
+  &:hover {
+    .footer__developers-img {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     column-gap: 22px;
   }
 }
 
 .footer__icon-img {
+  fill: $icon-color;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     &--vkontakte {
       width: 30px;
@@ -74,7 +94,7 @@
 
     &--facebook {
       width: 28px;
-      height: 33px;
+      height: 27px;
     }
   }
 }
@@ -85,4 +105,8 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+}
+
+.footer__developers-logo {
+  margin: 0;
 }

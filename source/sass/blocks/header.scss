@@ -10,7 +10,7 @@
 
 .header__wrapper {
   display: block;
-  padding: 13px 25px;
+  padding: 13px 20px;
   max-width: $mobile-only;
 
   @media (min-width: $tablet-width) {
@@ -48,13 +48,5 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     margin-left: 5px;
-  }
-}
-
-.header__logo-image {
-  margin-left: -5px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 0;
   }
 }

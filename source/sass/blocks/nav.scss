@@ -8,17 +8,9 @@
 }
 
 .nav__wrapper {
-  display: block;
-
-  &--closed {
-    display: none;
-  }
+  display: none;
 
   &--opened {
-    display: block;
-  }
-
-  &--nojs {
     display: block;
   }
 
@@ -33,12 +25,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    column-gap: 24px;
+    column-gap: 36px;
     padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 22px;
+    column-gap: 35px;
   }
 }
 
@@ -83,9 +75,10 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 0 0 5px;
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,8 +98,14 @@
         width: 100%;
         height: 2px;
         left: 0;
-        bottom: -5px;
+        bottom: -9px;
         background-color: $green-line;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        bottom: -4px;
       }
     }
   }

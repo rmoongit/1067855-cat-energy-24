@@ -6,8 +6,8 @@
   height: 30px;
   background-color: transparent;
   cursor: pointer;
-  right: -11px;
-  top: -35px;
+  right: -3px;
+  top: -34px;
 
   &::after {
     position: absolute;
@@ -23,11 +23,7 @@
     transform: translate(-50%, -50%);
   }
 
-  &--nojs {
-    display: none;
-  }
-
-  &--closed {
+  &--opened {
     &::before,
     &::after {
       content: "";

@@ -29,7 +29,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    padding: 166px 10px 0 17px;
+    margin-bottom: 16px;
   }
 }
 
@@ -39,7 +39,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
-    padding: 0 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 4px;
+    padding-right: 4px;
   }
 }
 

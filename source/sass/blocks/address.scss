@@ -61,14 +61,16 @@
   }
 
   &--bold {
+    margin-left: 5px;
     text-transform: uppercase;
-    width: 145px;
+    width: 140px;
     flex-shrink: 0;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 26px;
       width: 164px;
+      margin-left: 0;
     }
   }
 }

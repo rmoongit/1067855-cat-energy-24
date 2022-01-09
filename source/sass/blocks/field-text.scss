@@ -57,9 +57,9 @@
 }
 
 .field-text__input,
-textarea {
+.form__comments-area {
   flex-grow: 1;
-  border: 1px solid $border-hover;
+  border: 1px solid $border-input;
   color: $grey;
   font-size: 16px;
   line-height: 18px;
@@ -76,6 +76,10 @@ textarea {
 
 .field-text__input {
   padding: 13px 15px;
+
+  &:hover {
+    border-color: $border-hover;
+  }
 
   &:focus-within,
   &:active {
@@ -95,7 +99,8 @@ textarea {
   }
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.field-text__input::-webkit-outer-spin-button,
+.field-text__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }

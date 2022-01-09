@@ -78,4 +78,8 @@
     padding-top: 4px;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }

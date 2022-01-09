@@ -17,7 +17,7 @@
 }
 
 .functional__title {
-  margin: 0 0 41px;
+  margin: 0 5px 42px;
   color: $black;
   font-size: 36px;
   line-height: 40px;
@@ -25,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-title;
+    margin-left: 0;
   }
 }
 
@@ -105,9 +106,11 @@
 
 .functional__img {
   flex-shrink: 0;
-  margin-right: 24px;
+  margin-right: 20px;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 80px;
     height: 80px;
   }
