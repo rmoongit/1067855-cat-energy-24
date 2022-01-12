@@ -12,6 +12,7 @@ import squoosh from 'gulp-libsquoosh';
 import webp from 'gulp-webp';
 import svgo from 'gulp-svgmin';
 import terser from 'gulp-terser';
+import htmlmin from 'gulp-htmlmin'
 
 // Styles
 export const styles = () => {
@@ -36,6 +37,7 @@ const reload = (done) => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
 

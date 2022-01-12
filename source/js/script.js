@@ -2,6 +2,7 @@ let navMain = document.querySelector('.nav__wrapper');
 let navToggle = document.querySelector('.burger');
 let pageMain = document.querySelector('.no-js');
 
+
 pageMain.classList.remove('no-js');
 
 navToggle.addEventListener('click', function () {
@@ -9,4 +10,5 @@ navToggle.addEventListener('click', function () {
   navToggle.classList.toggle('burger--opened');
 });
 
-// map
+//slider
+
