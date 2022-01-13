@@ -4,10 +4,10 @@
   display: block;
   width: 30px;
   height: 30px;
-  background-color: $green;
+  background-color: transparent;
   cursor: pointer;
-  right: 30px;
-  top: -55px;
+  right: -3px;
+  top: -34px;
 
   &::after {
     position: absolute;
@@ -23,7 +23,7 @@
     transform: translate(-50%, -50%);
   }
 
-  &--closed {
+  &--opened {
     &::before,
     &::after {
       content: "";

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html">
+<html class="page no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Кэт-енерджи">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon/16.png" type="image/x-icon">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,11 +20,15 @@
 <header class="header">
   <div class="header__wrapper container">
     <a class="header__logo" href="#">
-      <img class="header__logo-image" src="img/header-logo-cat.svg" width="191" height="38" alt="Логотип шапки Кэт">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-image" src="img/header-logo-cat.svg" width="191" height="38" alt="Логотип шапки Кэт">
+      </picture>
     </a>
 
     <nav class="header__nav nav">
-      <button class="nav__burger burger  burger--closed" type="button">
+      <button class="burger" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
@@ -54,7 +64,17 @@
       <h1 class="nutrition__title">Функциональное<br>
         питание для котов</h1>
       <p class="nutrition__text">Занялся собой? Займись котом!</p>
-      <img class="nutrition__image" src="img/cat-energy-mobile.png" width="280" height="270" alt="Кэт енерджи курица">
+      <picture class="nutrition__picture">
+        <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/cat-energy-desktop.webp 1x, img/cat-energy-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat-energy-tablet.webp 1x, img/cat-energy-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/cat-energy-mobile.webp 1x, img/cat-energy-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="img/cat-energy-desktop.png 1x, img/cat-energy-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/cat-energy-tablet.png 1x, img/cat-energy-tablet@2x.png 2x">
+        <img class="nutrition__image" src="img/cat-energy-mobile.png" srcset="img/cat-energy-mobile@2x.png 2x"
+             loading="lazy" width="280" height="270" alt="Кэт енерджи курица">
+      </picture>
       <a class="nutrition__link-button button" href="form.html">
         подобрать программу
       </a>
@@ -68,9 +88,10 @@
 
         <div class="diets-catalog__diet">
           <div class="diets-catalog__logo">
-            <img class="diets-catalog__image" src="img/icons/cat-diet.svg" width="50" height="53"
-                 alt="логотип похудение">
-            <h3 class="diets-catalog__title">похудение</h3>
+            <svg class="diets-catalog__image" width="50" height="53" aria-label="логотип похудение">
+              <use xlink:href="img/sprite.svg#cat-diet"></use>
+            </svg>
+            <h2 class="diets-catalog__title">похудение</h2>
           </div>
 
           <p class="diets-catalog__text">
@@ -85,9 +106,11 @@
 
         <div class="diets-catalog__diet">
           <div class="diets-catalog__logo">
-            <img class="diets-catalog__image" src="img/icons/cat-weight.svg" width="67" height="50"
-                 alt="логотип массы">
-            <h3 class="diets-catalog__title">Набор массы</h3>
+            <svg class="diets-catalog__image diets-catalog__image--mass" width="67" height="50"
+                 aria-label="логотип набора массы">
+              <use xlink:href="img/sprite.svg#cat-weight"></use>
+            </svg>
+            <h2 class="diets-catalog__title">Набор массы</h2>
           </div>
 
           <p class="diets-catalog__text">
@@ -105,30 +128,38 @@
 
     <section class="functional">
       <div class="functional__wrapper">
-        <h2 class="functional__title">Как это работает?</h2>
+        <h2 class="functional__title">Как это работает</h2>
 
         <ul class="functional__list">
           <li class="functional__item">
-            <img class="functional__img" src="img/icons/work-leaf.svg" width="60" height="60" alt="Логотип Лист">
+            <svg class="functional__img" width="60" height="60" aria-label="питательное вещество">
+              <use xlink:href="img/sprite.svg#work-leaf"></use>
+            </svg>
             <p class="functional__text">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
           <li class="functional__item">
-            <img class="functional__img" src="img/icons/work-powder.svg" width="60" height="60" alt="Логотип Лист">
+            <svg class="functional__img" width="60" height="60" aria-label="ингридиент в виде порошка">
+              <use xlink:href="img/sprite.svg#work-powder"></use>
+            </svg>
             <p class="functional__text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
           <li class="functional__item">
-            <img class="functional__img" src="img/icons/work-nutrition.svg" width="60" height="60" alt="Логотип Лист">
+            <svg class="functional__img" width="60" height="60" aria-label="заменитель пищи">
+              <use xlink:href="img/sprite.svg#work-nutrition"></use>
+            </svg>
             <p class="functional__text">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
           <li class="functional__item">
-            <img class="functional__img" src="img/icons/work-clock.svg" width="60" height="60" alt="Логотип Лист">
-            <p class="functional__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <svg class="functional__img" width="60" height="60" aria-label="подсчёт каллорий">
+              <use xlink:href="img/sprite.svg#work-clock"></use>
+            </svg>
+            <p class="functional__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!
             </p>
           </li>
         </ul>
@@ -161,19 +192,39 @@
       </div>
 
       <div class="compare">
-        <div class="compare__image">
-          <img src="img/cat-fat.png" width="677" height="520" alt="Толстый кот">
+        <div class="compare__wrapper">
+          <div class="compare__picture compare_picture--before">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
+              <img class="compare__img compare__img--before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
+                   width="280" height="232" loading="lazy" alt="Толстый кот">
+            </picture>
+          </div>
+
+          <div class="compare__picture compare_picture--after">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+              <img class="compare__img compare__img--after" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x"
+                   width="243" height="232" loading="lazy" alt="Худой кот">
+            </picture>
+          </div>
         </div>
 
         <div class="compare__scale scale">
           <p class="scale__before">
-            <button class="scale__button" type="button">было</button>
+            <button class="scale__button scale__button--before" type="button">было</button>
           </p>
           <div class="scale__bar">
             <span class="scale__bar-into"></span>
           </div>
           <p class=" scale__after">
-            <button class="scale__button" type="button">стало</button>
+            <button class="scale__button scale__button--after" type="button">стало</button>
           </p>
         </div>
       </div>
@@ -188,9 +239,10 @@
     </div>
 
     <div class="map" id="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2411.3237727031837!2d30.320980203242108!3d59.938727050551506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1639075389269!5m2!1sru!2s"
-        width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="map__style"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2411.3237727031837!2d30.320980203242108!3d59.938727050551506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1639075389269!5m2!1sru!2s"
+              width="600" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+              title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
     </div>
   </section>
 
@@ -210,17 +262,26 @@
 
         <li class="footer__item">
           <a href="#">
-            <img src="img/icons/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте">
+            <svg class="footer__icon-img footer__icon-img--vkontakte" width="23" height="16"
+                 aria-label="ссылка на вконтакте">
+              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="footer__item">
           <a href="#">
-            <img src="img/icons/icon-instagram.svg" width="16" height="16" alt="Инстаграмм">
+            <svg class="footer__icon-img footer__icon-img--inst" width="16" height="16"
+                 aria-label="ссылка на инстаграмм">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
           </a>
         </li>
         <li class="footer__item">
           <a href="#">
-            <img src="img/icons/icon-facebook.svg" width="22" height="22" alt="Фейсбук">
+            <svg class="footer__icon-img footer__icon-img--facebook" width="22" height="22"
+                 aria-label="ссылка на фейсбук">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -229,20 +290,22 @@
     <div class="footer__developers">
       <p class="footer__developers-logo">
         <a href="#">
-          <img src="img/logo-footer-html.svg" width="114" height="18" alt="Надпись разработчика">
+          <img class="footer__html-academy-logo" src="img/logo-footer-html.svg" width="114" height="18"
+               alt="Надпись разработчика">
         </a>
       </p>
       <p class="footer__developers-logo">
         <a href="#">
-          <img src="img/logo-footer-icon.svg" width="27" height="34" alt="Иконка разработчика">
+          <svg class="footer__developers-img" width="27" height="34" aria-label="ссылка на htmlacademy">
+            <use xlink:href="img/sprite.svg#logo-footer-icon"></use>
+          </svg>
         </a>
       </p>
     </div>
   </div>
 </footer>
 
-<script src="js/script.js"></script>
-<script src="https://goo.gl/maps/9N8VuzymZLhMeS1s8" async defer></script>
+<script src="js/script.min.js"></script>
 
 </body>
 

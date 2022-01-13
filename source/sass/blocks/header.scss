@@ -10,11 +10,13 @@
 
 .header__wrapper {
   display: block;
-  padding: 0;
+  padding: 13px 20px;
   max-width: $mobile-only;
 
   @media (min-width: $tablet-width) {
     @include tablet;
+    padding-top: 24px;
+    padding-bottom: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,13 +24,14 @@
 
   @media (min-width: $desktop-width) {
     @include desktop;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
 .header__logo {
   display: block;
   width: 235px;
-  padding: 24px 20px;
 
   &:hover {
     opacity: 0.8;
@@ -44,5 +47,6 @@
 
   @media (min-width: $desktop-width) {
     width: 202px;
+    margin-left: 5px;
   }
 }

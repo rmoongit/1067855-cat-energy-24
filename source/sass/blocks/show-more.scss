@@ -1,10 +1,11 @@
 .show-more {
-  margin-bottom: 25px;
+  margin-bottom: 46px;
   position: relative;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    border: 2px solid $basic-grey;
   }
 
   &::after {
@@ -12,7 +13,7 @@
     content: "";
     width: 100vw;
     height: 1px;
-    bottom: 0;
+    bottom: -22px;
     background-color: $special-grey;
 
     @media (min-width: $tablet-width) {
@@ -23,17 +24,18 @@
 
 .show-more__wrapper {
   padding-top: 29px;
-  padding-bottom: 25px;
+  padding-bottom: 2px;
   grid-column: 1/-1;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 75px 0 0 0;
+    padding-top: 44px;
   }
 }
 
 .show-more__title {
   line-height: 20px;
+  font-weight: 400;
   font-size: 16px;
   color: $black;
   text-transform: uppercase;
@@ -41,7 +43,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   br {
@@ -61,7 +65,9 @@
   font-size: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
+    margin-bottom: 81px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   br {
@@ -78,6 +84,11 @@
   background-color: $basic-grey;
   color: $grey;
   cursor: pointer;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 168px;
@@ -101,10 +112,10 @@
 }
 
 .show-more__img {
-  margin: 0 auto 23px;
+  margin: 0 auto 21px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 38px;
     width: 60px;
     height: 60px;
   }

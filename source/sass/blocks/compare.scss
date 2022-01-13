@@ -1,5 +1,5 @@
 .compare {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1;
@@ -10,19 +10,76 @@
     grid-column: 2;
     grid-row: 1/4;
     background-color: transparent;
+    margin-bottom: 0;
   }
 }
 
-.compare__image {
-  img {
-    @media (min-width: $tablet-width) {
-      width: 591px;
-      height: 576px;
+.compare__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.compare__picture {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 576px;
+    overflow: hidden;
+    width: 50%;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 520px;
+    left: 100px;
+    top: -20px;
+  }
+}
+
+.compare__img {
+  &--after {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 520px;
+    min-width: 536px;
+
+
+    &--before {
+      position: absolute;
+      bottom: 0;
+      left: 100px;
+      max-width: 100%;
+
+      @media (min-width: $desktop-width) {
+        left: 135px;
+      }
     }
 
-    @media (min-width: $desktop-width) {
-      width: 592px;
-      height: 511px;
+    &--after {
+      position: absolute;
+      display: block;
+      right: 60px;
+      bottom: 0;
+
+      @media (min-width: $desktop-width) {
+        right: 100px;
+      }
     }
+  }
+}
+
+.compare__scale {
+  padding-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }

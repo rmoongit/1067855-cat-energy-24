@@ -1,8 +1,12 @@
 .extra-goods {
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
   }
 }
 
@@ -11,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 896px 245px;
+    grid-template-columns: 896px 325px;
   }
 }
 
@@ -25,7 +29,7 @@
 }
 
 .extra-goods__title {
-  margin: 0 0 36px;
+  margin: 0 0 34px;
   color: $black;
   font-size: 26px;
   line-height: 26px;
@@ -39,6 +43,7 @@
     grid-column: 1;
     grid-row: 1;
     width: 445px;
+    margin-bottom: 83px;
   }
 }
 
@@ -47,18 +52,17 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
-    margin-right: 79px;
     margin-bottom: 0;
   }
 }
 
 .extra-goods__item {
-  padding-top: 19px;
+  padding-top: 10px;
   padding-bottom: 19px;
   display: flex;
   flex-wrap: wrap;
@@ -68,13 +72,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 181px 50px;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    grid-template-columns: 1fr 181px 94px;
+    padding: 26px 38px 31px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 80px 244px;
+    grid-template-columns: 284px 204px 44px 244px;
+    padding: 17px 0 18px;
     align-items: center;
   }
 }
@@ -84,6 +88,7 @@
 }
 
 .extra-goods__text {
+  font-weight: 400;
   text-transform: uppercase;
   color: $hex;
   line-height: 16px;
@@ -94,6 +99,11 @@
     width: auto;
     font-size: 20px;
     line-height: 20px;
+    margin: 0 0 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -108,6 +118,11 @@
     line-height: 20px;
     font-size: 16px;
     margin: 0;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
@@ -119,6 +134,11 @@
   @media (min-width: $tablet-width) {
     line-height: 20px;
     font-size: 16px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
@@ -129,6 +149,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     grid-column: 1/-1;
+    padding: 8px;
   }
 
   @media (min-width: $desktop-width) {

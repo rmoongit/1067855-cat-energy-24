@@ -1,10 +1,13 @@
-.select-programm {
-  padding: 27px 0 39px;
-}
 
 .select-programm__wrapper {
+  padding: 27px 20px 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 70px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 22px 110px 0;
   }
 }
 
@@ -16,6 +19,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -29,5 +33,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }

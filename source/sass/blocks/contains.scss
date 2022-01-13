@@ -11,7 +11,7 @@
 }
 
 .contains__title {
-  margin: 0 0 18px 0;
+  margin: 0 0 12px 0;
   line-height: 20px;
   font-weight: 400;
   width: 78px;
@@ -19,20 +19,32 @@
   color: $hex;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 21px;
+    margin: 0 auto 13px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     width: 167px;
+    padding: 157px 10px 0 17px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
+    margin-bottom: 16px;
   }
 }
 
 .contains__list {
   width: 100%;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 
 .contains__item {
@@ -45,7 +57,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     padding-top: 5px;
     border-bottom: 1px solid $border-hover;
   }
