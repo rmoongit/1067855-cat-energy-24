@@ -8,7 +8,6 @@
 
 .address__wrapper {
   display: flex;
-  justify-content: center;
   padding-top: 27px;
   padding-bottom: 26px;
 
@@ -19,10 +18,10 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    width: 565px;
-    padding: 65px 70px 56px 70px;
+    width: 570px;
+    padding: 65px 75px 56px;
     top: 92px;
-    left: 115px;
+    left: calc(50% - 610px);
     background-color: $white;
   }
 }
@@ -73,4 +72,8 @@
       margin-left: 0;
     }
   }
+}
+
+.address__text-city {
+  display: block;
 }

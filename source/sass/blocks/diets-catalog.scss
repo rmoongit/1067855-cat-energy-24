@@ -136,10 +136,8 @@
     font-size: 16px;
     line-height: 16px;
 
-    &:hover {
-      &::after {
-        width: 33px;
-      }
+    &:hover::after {
+      width: 33px;
     }
 
     &:active {

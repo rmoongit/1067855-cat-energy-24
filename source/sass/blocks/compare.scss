@@ -49,12 +49,13 @@
 
     &--before {
       position: absolute;
-      bottom: 0;
-      left: 100px;
-      max-width: 100%;
+      bottom: 24px;
+      left: 60px;
+      min-width: 650px;
 
       @media (min-width: $desktop-width) {
-        left: 135px;
+        left: 95px;
+        bottom: 15px;
       }
     }
 
@@ -62,10 +63,11 @@
       position: absolute;
       display: block;
       right: 60px;
-      bottom: 0;
+      bottom: 11px;
 
       @media (min-width: $desktop-width) {
         right: 100px;
+        bottom: 5px;
       }
     }
   }

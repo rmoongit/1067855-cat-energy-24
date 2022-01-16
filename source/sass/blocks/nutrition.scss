@@ -58,14 +58,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 36px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     padding-top: 220px;
-    padding-bottom: 90px;
-    grid-template-columns: 500px 1fr;
     min-height: 694px;
     position: relative;
   }
@@ -87,8 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: 0 0 41px 0;
     padding-left: 79px;
   }
 }
@@ -114,13 +110,11 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-bottom: 0;
     padding-left: 81px;
   }
 }
 
 .nutrition__link-button {
-
   @media (min-width: $tablet-width) {
     grid-column: 1/1;
     grid-row: 3;
@@ -146,6 +140,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 54px;
+    bottom: 55px;
     transform: translate(-50%);
     width: 552px;
     height: auto;
