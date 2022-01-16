@@ -54,9 +54,8 @@
   }
 }
 
-.field-text__input,
-.form__comments-area {
-  flex-grow: 1;
+.field-text__input {
+  padding: 13px 15px;
   border: 1px solid $border-input;
   color: $grey;
   font-size: 16px;
@@ -65,15 +64,6 @@
   font-family: $main-font;
   outline: none;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.field-text__input {
-  padding: 13px 15px;
 
   &:hover {
     border-color: $border-hover;
@@ -86,6 +76,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 13px 18px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
