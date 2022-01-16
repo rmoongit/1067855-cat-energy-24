@@ -18,11 +18,9 @@
       }
     }
 
-    &:hover,
-    &:focus-within {
-      &::after {
-        background-color: $green;
-      }
+    &:hover::after,
+    &:focus-within::after {
+      background-color: $green;
     }
   }
 

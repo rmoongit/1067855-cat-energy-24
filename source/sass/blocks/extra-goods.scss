@@ -1,4 +1,5 @@
 .extra-goods {
+  overflow-x: hidden;
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
@@ -11,8 +12,6 @@
 }
 
 .extra-goods__wrapper {
-  overflow-x: hidden;
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 896px 325px;
